@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp" ng-controller="Main">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="author" content="Isaac Mikel">
+        <meta name="description" content="Isaac Mikel - Graphic Designer">
+        <meta name="theme-color" content="#000">
+        <title>Isaac Mikel</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.js"></script>
+        <script src="app.js"></script>
+        <!-- <script>
+            $(document).ready(function(){
+                $(".thumbnail-item").click(function(){
+                    $(".right-item2").slideToggle("fast");
+                });
+                $("#close").click(function(){
+                    $(".right-item2").hide("fast");
+                });
+            });
+        </script> -->
+    </head>
+    <body>
+        <page>
+          <div id="main">
+            <!--Injected Content-->
+            <div ng-view>
+          </div>
+        </page>
+    </body>
+</html>
