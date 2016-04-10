@@ -38,7 +38,6 @@
 
 
             <hr class="left-hr">
-            <h1>{{message}}</h1>
             <div class="social-container">
                 <div class="social"><b>email</b><a href="mailto:isaac@mikel.design">isaac@mikel.design</a></div>
                 <div class="social"><b>behance</b><a href="//behance.net/icusficus" target="_blank">/icusficus</a></div>
@@ -48,10 +47,6 @@
                 </div>
                 <br>
                 <div class="social"><b>resume</b><a href="images/resume.pdf" target="_blank">résumé</a></div>
-                <br>
-                <div class="social"><a href="pages/home.html">home</a></div>
-                <div class="social"><a href="pages/about.html">about</a></div>
-                <div class="social"><a href="pages/contact.html">contact</a></div>
             </div>
         </div>
         <div class="container">
@@ -87,8 +82,8 @@
 
             <div class="right-item">
                 <div class="thumbnail-item" ng-repeat="item in portfolioItems">
-                    <a href="#{{title}}"><img class="thumbnail" ng-src="{{item.thumbnail}}" ng-class="{thumbnail_hover: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false"></a>
-                    <a href="#{{title}}">{{item.title}}</a>
+                    <a href="#{{item.title}}"><img class="thumbnail" ng-src="{{item.thumbnail}}" ng-class="{thumbnail_hover: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false"></a>
+                    <a href="#{{item.title}}">{{item.title}}</a>
                     <br>
                     <b>{{item.date}}</b>
                 </div>

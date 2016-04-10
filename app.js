@@ -1,36 +1,5 @@
 var myApp = angular.module('myApp', []);
 
-myApp.config($routeProvider) {
-
-$routeProvider
-
-//home page
-    .when('/', {
-        templateUrl: 'pages/home.html',
-        controller: 'mainController'
-    })
-    .when('/about', {
-        templateUrl: 'pages/about.html',
-        controller: 'aboutController'
-    })
-    .when('/contact', {
-        templateUrl: 'pages/contact.html',
-        controller: 'contactController'
-    });
-});
-
-//Controllers ----------------------------
-//home page controller
-myApp.controller('mainController', function($scope) {
-    $scope.message = 'home!';
-});
-myApp.controller('aboutController', function($scope) {
-    $scope.message = 'about!';
-});
-myApp.controller('contactController', function($scope) {
-    $scope.message = 'contact!';
-});
-
 function Main($scope, $http) {
     $scope.portfolioItems = [{
         id: 1,
