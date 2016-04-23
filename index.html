@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" ng-app="myApp" ng-controller="Main">
+<html lang="en-us" ng-app="app" ng-controller="MainCtrl">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#000">
     <title>Isaac Mikel</title>
     <link rel="stylesheet" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.js"></script>
     <script src="app.js"></script>
     <!-- <script>
@@ -24,18 +24,17 @@
             });
         </script> -->
 </head>
+<body id="fade">
 
-<body>
     <page>
-        <div class="left-item-float" id="fade">
+        <div class="left-item-float">
             <div class="icon">
-                <img src="images/icon.png" alt="logo" width="60px" height="60px"></img>
+                <a href="index.html"><img src="images/icon.png" alt="logo" width="60px" height="60px"></a>
                 <div class="info">
                     <h1>Isaac Mikel</h1>
                     <p>Graphic design is my passion</p>
                 </div>
             </div>
-
 
             <hr class="left-hr">
             <div class="social-container">
@@ -81,15 +80,44 @@
                    <div class="thumbnail-item"><img src="images/thumbnail-badlionicons.png" class="thumbnail"></img></div>
 
                </div> -->
-
-
-            <div class="right-item">
-                <div class="thumbnail-item" ng-repeat="item in portfolioItems">
+            <div>
+                <ng-view></ng-view>
+                <!-- <div class="thumbnail-item" ng-repeat="item in portfolioItems">
                     <a href="#{{item.title}}"><img class="thumbnail" ng-src="{{item.thumbnail}}" ng-class="{thumbnail_hover: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false"></a>
                     <a href="#{{item.title}}">{{item.title}}</a>
                     <br>
                     <b>{{item.date}}</b>
-                </div>
+                </div> -->
+                <!-- Inline Templates (Partials) -->
+
+                <script type=text/ng-template id=home.html>
+                    <div class="right-item">
+                        <div class="thumbnail-item" ng-repeat="item in items">
+                            <a href="#/{{item.id}}"><img ng-src="{{item.thumbnail}}" class="thumbnail"></a>
+                            <a href="#{{item.title}}">{{item.title}}</a>
+                            <br>
+                            <b>{{item.date}}</b>
+                        </div>
+                    </div>
+                </script>
+
+                <script type=text/ng-template id=detail.html>
+                    <div class="largeimage">
+                        <h1 style="display:inline-block;">{{item.title}}</h1><a href="#/" id="back_button">back</a>
+                        <br>
+                        <br>
+                        <div class="thumbnail-item"><img class="largeimage" ng-src="{{item.image}}"></div>
+                        <h3>{{item.detail}}</h3>
+                        <div class="detail_footer">
+                            <div class="detail_footer_item"><h2 style="margin-right:1em;">date </h2><h3>{{item.date}}</h3></div>
+                            <div class="detail_footer_item"><h2 style="margin-right:1em;">tags</h2><h3>{{item.tags}}</h3></div>
+                        </div>
+                        <div class="footer">
+                        </div>
+                    </div>
+
+                </script>
+
             </div>
 
     </page>

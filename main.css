@@ -57,12 +57,13 @@ nav, section, summary, main, page, post {
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
 }
-
-a {
-    text-decoration: none;
-    cursor: default;
-}
-
+/*html {
+    background: url(images/topwrappingpaper.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: repeat-x;
+}*/
 .left-hr {
     border: 0;
     height: 1px;
@@ -178,8 +179,6 @@ body {
 
 p {
     line-height: 1.6;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
 }
 
 page {
@@ -196,16 +195,43 @@ post {
 }
 
 h1 {
-    font: 2rem/2em "karla", Monaco, Consolas, "Lucida Console", monospace;
+    font: "karla", Monaco, Consolas, "Lucida Console", monospace;
+    color: #222223;
+    font-size: 20px;
     font-weight: 600;
-    margin-bottom: 2rem;
 }
 
-h1.post-title {
-    font: 2rem/1em "karla", Monaco, Consolas, "Lucida Console", monospace;
-    margin-bottom: 0rem;
-    font-weight: 600;
+h2 {
+    font: "karla";
+    color: #66676c;
 }
+h3 {
+    font: "karla";
+    color: #222223;
+}
+a, a:visited, a:active {
+    color: #222223;
+    text-decoration: none;
+    cursor: default;
+}
+
+a:hover {
+    color: #000;
+}
+
+b {
+    color: #66676c;
+    display: inline-block;
+    font-weight: normal;
+    width: 13rem;
+}
+
+#back_button{
+    display:inline-block;
+    float: right;
+    color: #66676c;
+}
+
 #fade {
     animation: fadein 1s;
     -moz-animation: fadein 1s; /* Firefox */
@@ -242,12 +268,12 @@ h1.post-title {
     display: flex;
     flex-direction: column;
     margin-left: 0.7em;
+    margin-top: 0.7em;
 }
 .social {
     display: flex;
     flex-direction: colum;
     margin-bottom: .5em;
-
 }
 .right-item{
     /*this makes it a flex item of the parent container*/
@@ -262,6 +288,9 @@ h1.post-title {
     padding: 0px 8px 4px 0px;
     flex: 0 1 100%;
  }
+.largeimage{
+    width:100%;
+}
 .thumbnail{
     width:100%;
     opacity:0.7;
@@ -269,11 +298,22 @@ h1.post-title {
     filter: grayscale(100%);
     transition: opacity .2s;
 }
-.thumbnail_hover {
+
+.thumbnail:hover {
     opacity: 1;
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     transition: opacity .2s;
+}
+.detail_footer {
+    margin-top:2em;
+    display: flex;
+    flex-direction: row;
+}
+.detail_footer_item {
+    margin-right: 6em;
+    flex-direction: row;
+    display: flex;
 }
 @media screen and (min-width:1300px) {
     .thumbnail-item {
@@ -282,7 +322,6 @@ h1.post-title {
     .thumbnail {
         width: 100%;
     }
-
 }
 @media screen and (min-width:1050px) and (max-width:1300px) {
     .right-item{
@@ -305,10 +344,20 @@ h1.post-title {
      .thumbnail {
         width: 100%;
     }
+    .detail_footer {
+        flex-direction: column;
+    }
+    .detail_footer_item {
+        flex-direction: column;
+        margin-bottom:1.3em;
+    }
 }
 @media screen and (min-width:600px) and (max-width:899px) {
     .container{
         flex-direction: column;
+    }
+    .left-item{
+        min-width: 300px;
     }
     .left-item-float{
         position:relative;
@@ -330,12 +379,6 @@ h1.post-title {
         left: 5rem;
         position: static;
     }
-    .icon{
-        flex-direction:
-    }
-    .info{
-
-    }
     .social-container{
         display: flex;
         flex-direction: row;
@@ -345,6 +388,9 @@ h1.post-title {
         flex-direction:column;
         margin-right:1em;
         margin-bottom:1em;
+    }
+    .detail_footer_item {
+        flex-direction: column;
     }
 }
 @media screen and (min-width:0px) and (max-width:600px) {
@@ -361,6 +407,7 @@ h1.post-title {
      .thumbnail {
         width: 100%;
     }
+
     main, post, page {
         padding: 3rem;
     }
@@ -371,21 +418,15 @@ h1.post-title {
         left: 5rem;
         position: static;
     }
-}
-b {
-    color: #66676c;
-    display: inline-block;
-    font-weight: normal;
-    width: 15rem;
-}
-
-a, a:visited, a:active {
-    color: #222223;
+    .detail_footer {
+        flex-direction: column;
+    }
+    .detail_footer_item {
+        flex-direction: column;
+        margin-bottom:1.3em;
+    }
 }
 
-a:hover {
-    color: #000;
-}
 input {
     padding: 0.5rem;
     font: 1.6rem/1.2em "karla", Helvetica, Consolas, "Lucida Console", monospace;
@@ -399,116 +440,10 @@ input:focus {
     outline: none;
 }
 
-button {
-    padding: 0.5rem;
-    font: 1.6rem/1.2em "karla", Helvetica, Consolas, "Lucida Console", monospace;
-    color: rgb(128, 128, 128);
-    background: transparent;
-    border: 1px solid rgb(175, 175, 175);
-    border-radius: 3px;
+.footer {
+    height: 3em;
+    position: relative;
 }
 
-button:hover {
-    color: rgb(128, 128, 128);
-    border: 1px solid rgb(128, 128, 128);
-}
-
-footer.page {
-    font-size: 1.2rem;
-    line-height: 1.2em;
-    position: absolute;
-    bottom: 1rem;
-    left: 10rem;
-    opacity: 0.5;
-    -webkit-transition: opacity 150ms;
-    transition: opacity 150ms;
-}
-
-footer {
-    position: absolute;
-    bottom: 1rem;
-    left: 10rem;
-    opacity: 0.5;
-    -webkit-transition: opacity 150ms;
-    transition: opacity 150ms;
-}
-
-
-header {
-    position: static;
-    /*opacity: 0.5;*/
-    /*-webkit-transition: opacity 150ms;*/
-    transition: opacity 150ms;
-    text-align: right;
-}
-
-footer.page {
-    position: absolute;
-}
-
-
-footer.page:hover {
-    opacity: 1
-}
-
-/*@media (max-width: 1190px) {
-  .icon{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  .info{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin: auto;
-  }
-}*/
-
-/*
-@media (max-width: 580px) {
-    main, post, page {
-        padding: 3rem;
-    }
-    b {
-        display: block
-    }
-    li {
-        padding: 0.5rem 0 1rem
-    }
-    footer, footer.page  {
-        left: 5rem;
-        position: static;
-    }
-    .{
-        display: flex;
-        flex-direction: column;
-    }
-    .right-column{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap:wrap;
-        min-width: 80%;
-    }
-    .thumbnail{
-        min-width: 110%;
-        margin-bottom: 1em;
-        opacity:0.7;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        transition: opacity .1s;
-    }
-    .container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}*/
-
-
-h1, p {
-    margin: 0;
-}
 Status API Training Shop Blog About Pricing
 © 2016 GitHub, Inc. Terms Privacy Security Contact Help
