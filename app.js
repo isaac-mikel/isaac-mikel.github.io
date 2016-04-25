@@ -81,7 +81,7 @@ angular.module('appServices', [])
 .factory('Model', function() {
   var data = [{
     id: 0,
-    title: 'JB!',
+    title: 'JB',
     thumbnail: 'images/thumbnail-jb.png',
     tags: 'Portrait, Acrylic, Painting',
     image: 'images/jb.png',
@@ -89,12 +89,12 @@ angular.module('appServices', [])
     detail: 'Acrylic Portrait of the hunky Justin Beiber',
   }, {
     id: 1,
-    title: 'Character Animation Test',
+    title: 'Character Animation Walk Cycle',
     thumbnail: 'images/thumbnail-character.png',
     tags: 'Character Design, After Effects, Motion Graphics',
-    image: 'images/character.gif',
+    image: 'images/Character.gif',
     date: '02.20.16',
-    detail: 'Character animation test done in After Effects. Learning from the Frasier Davidson Skillshare class.',
+    detail: 'Character animation walk cycle done in After Effects. Learning from the Frasier Davidson Skillshare class.',
   }, {
     id: 2,
     title: 'Overwatch Art',
@@ -111,7 +111,33 @@ angular.module('appServices', [])
     image: 'images/insight.png',
     date: '12.10.15',
     detail: 'Branding and logo options for Insight',
-  }];
+  }, {
+    id: 4,
+    title: 'Starbucks',
+    thumbnail: 'images/thumbnail-starbucks.png',
+    tags: "Motion Graphics, After Effects, Branding",
+    image: 'images/starbucks.png',
+    date: '06.15.15',
+    link: 'https://vimeo.com/164171013',
+    detail: 'Branding and animation practice with Starbucks holiday drinks. Also mixed the audio in Fruity Loops Studio.',
+  }, {
+    id: 5,
+    title: 'Alliance',
+    thumbnail: 'images/thumbnail-alliance.png',
+    tags: "Logo Design, Illustrator, Branding",
+    image: 'images/alliance.png',
+    date: '01.12.15',
+    detail: 'I got the opportunity to help create the logo for a local chiropractor office in Eagle, Idaho called Alliance Physical Medicine. It was a great learning experience and I hope to do more logo design in the future.',
+  }, {
+    id: 6,
+    title: 'Beyoncé',
+    thumbnail: 'images/thumbnail-bey.png',
+    tags: "Digital Painting, Photoshop",
+    image: 'images/bey.png',
+    date: '1.08.15',
+    detail: 'Digital Painting of Beyoncé done in Photoshop and Sketchbook Pro.',
+  }
+];
 
   return {
     notes: function() {

@@ -29,7 +29,7 @@
     <page>
         <div class="left-item-float">
             <div class="icon">
-                <a href="index.html"><img src="images/icon.png" alt="logo" width="60px" height="60px"></a>
+                <a href="#/"><img src="images/icon.png" alt="logo" width="50px" height="50px"></a>
                 <div class="info">
                     <h1>Isaac Mikel</h1>
                     <p>Graphic design is my passion</p>
@@ -46,9 +46,6 @@
                 </div>
                 <br>
                 <div class="social"><b>resume</b><a href="images/resume.pdf" target="_blank">résumé</a></div>
-                <br>
-                <div class="social"><b>presenations</b><a href="images/snickerdooodles1.pdf" target="_blank">snickerdoodle</a></div>
-                <div class="social"><b> </b><a href="images/illuminatedmanuscript.pdf" target="_blank">illuminated manuscript</a></div>
             </div>
         </div>
         <div class="container">
@@ -106,6 +103,7 @@
                         <h1 style="display:inline-block;">{{item.title}}</h1><a href="#/" id="back_button">back</a>
                         <br>
                         <br>
+                        <a href="{{item.link}}">{{item.link}}</a>
                         <div class="thumbnail-item"><img class="largeimage" ng-src="{{item.image}}"></div>
                         <h3>{{item.detail}}</h3>
                         <div class="detail_footer">
