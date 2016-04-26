@@ -399,7 +399,7 @@ b {
         flex-direction: column;
     }
     .left-item{
-        min-width: 300px;
+        min-width: 50px;
     }
     .left-item-float{
         position:relative;
