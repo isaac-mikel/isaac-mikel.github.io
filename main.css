@@ -374,7 +374,7 @@ b {
         padding: 3rem;
     }
     b {
-        display: block
+        display: block;
     }
     footer, footer, page  {
         left: 5rem;
@@ -399,7 +399,7 @@ b {
         flex-direction: column;
     }
     .left-item{
-        min-width: 50px;
+        min-width: 300px;
     }
     .left-item-float{
         position:relative;
@@ -417,7 +417,8 @@ b {
         padding: 3rem;
     }
     b {
-        display: block
+        display: block;
+
     }
     footer, footer.page  {
         left: 5rem;
