@@ -81,6 +81,14 @@ angular.module('appServices', [])
 .factory('Model', function() {
   var data = [{
     id: 0,
+    title: 'Pine Scent',
+    thumbnail: 'images/thumbnail-pinescent.gif',
+    tags: 'Photoshop, Animation, Motion Graphics',
+    image: 'images/pinescent.gif',
+    date: '06.03.16',
+    detail: 'I am learning so much from Alex Grigg about animation specifically in Photoshop and I hope to learn more in the future.',
+  }, {
+    id: 1,
     title: 'JB',
     thumbnail: 'images/thumbnail-jb.png',
     tags: 'Portrait, Acrylic, Painting',
@@ -88,7 +96,7 @@ angular.module('appServices', [])
     date: '05.26.16',
     detail: 'Acrylic Portrait of the hunky Justin Beiber',
   }, {
-    id: 1,
+    id: 2,
     title: 'Character Animation Walk Cycle',
     thumbnail: 'images/thumbnail-character.png',
     tags: 'Character Design, After Effects, Motion Graphics',
@@ -96,7 +104,7 @@ angular.module('appServices', [])
     date: '02.20.16',
     detail: 'Character animation walk cycle done in After Effects. Learning from the Frasier Davidson Skillshare class.',
   }, {
-    id: 2,
+    id: 3,
     title: 'Overwatch Art',
     thumbnail: 'images/thumbnail-dva.png',
     tags: "Character Design, Digital Painting, Overwatch",
@@ -104,7 +112,7 @@ angular.module('appServices', [])
     date: '03.23.16',
     detail: 'Photoshop Painting of D.Va from the new Overwatch',
   }, {
-    id: 3,
+    id: 4,
     title: 'Insight',
     thumbnail: 'images/thumbnail-insight.png',
     tags: "Logo Design, Branding",
@@ -112,7 +120,7 @@ angular.module('appServices', [])
     date: '12.10.15',
     detail: 'Branding and logo options for Insight',
   }, {
-    id: 4,
+    id: 5,
     title: 'Starbucks',
     thumbnail: 'images/thumbnail-starbucks.png',
     tags: "Motion Graphics, After Effects, Branding",
@@ -121,7 +129,7 @@ angular.module('appServices', [])
     link: 'https://vimeo.com/164171013',
     detail: 'Branding and animation practice with Starbucks holiday drinks. Also mixed the audio in Fruity Loops Studio.',
   }, {
-    id: 5,
+    id: 6,
     title: 'Alliance',
     thumbnail: 'images/thumbnail-alliance.png',
     tags: "Logo Design, Illustrator, Branding",
@@ -129,7 +137,7 @@ angular.module('appServices', [])
     date: '01.12.15',
     detail: 'I got the opportunity to help create the logo for a local chiropractor office in Eagle, Idaho called Alliance Physical Medicine. It was a great learning experience and I hope to do more logo design in the future.',
   }, {
-    id: 6,
+    id: 7,
     title: 'Beyoncé',
     thumbnail: 'images/thumbnail-bey.png',
     tags: "Digital Painting, Photoshop",
