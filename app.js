@@ -121,6 +121,14 @@ angular.module('appServices', [])
     detail: 'Branding and logo options for Insight',
   }, {
     id: 5,
+    title: 'White Tiger IT',
+    thumbnail: 'images/thumbnail-whitetiger.png',
+    tags: "Branding, Logo Design, Illustrator",
+    image: 'images/whitetiger.png',
+    date: '10.04.15',
+    detail: 'Branding and logo design for school group project. Project was to create a mock-up tech business and to design the branding of the fake business.',
+  }, {
+    id: 6,
     title: 'Starbucks',
     thumbnail: 'images/thumbnail-starbucks.png',
     tags: "Motion Graphics, After Effects, Branding",
@@ -129,7 +137,7 @@ angular.module('appServices', [])
     link: 'https://vimeo.com/164171013',
     detail: 'Branding and animation practice with Starbucks holiday drinks. Also mixed the audio in Fruity Loops Studio.',
   }, {
-    id: 6,
+    id: 7,
     title: 'Alliance',
     thumbnail: 'images/thumbnail-alliance.png',
     tags: "Logo Design, Illustrator, Branding",
@@ -137,7 +145,7 @@ angular.module('appServices', [])
     date: '01.12.15',
     detail: 'I got the opportunity to help create the logo for a local chiropractor office in Eagle, Idaho called Alliance Physical Medicine. It was a great learning experience and I hope to do more logo design in the future.',
   }, {
-    id: 7,
+    id: 8,
     title: 'Beyoncé',
     thumbnail: 'images/thumbnail-bey.png',
     tags: "Digital Painting, Photoshop",
