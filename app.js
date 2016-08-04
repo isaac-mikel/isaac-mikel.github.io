@@ -81,6 +81,22 @@ angular.module('appServices', [])
 .factory('Model', function() {
   var data = [{
     id: 0,
+    title: 'dRecovery Logo',
+    thumbnail: 'images/thumbnail-drecovery.png',
+    tags: 'Branding, Logo, Money',
+    image: 'images/drecovery.png',
+    date: '07.28.16',
+    detail: 'Recovery from Debt! Quick logo design for a finance app with inspiration and style from the Everydollar app.',
+  }, {
+    id: 1,
+    title: 'Team Galaxy',
+    thumbnail: 'images/thumbnail-teamgalaxy.png',
+    tags: 'Illustrator, Logo, Space',
+    image: 'images/teamgalaxy.png',
+    date: '07.05.16',
+    detail: 'It was an out of this world experience designing this one for a gaming team! The inspiration and style came from Emrich Office and his Bottle Logic branding.',
+  }, {
+    id: 2,
     title: 'Pine Scent',
     thumbnail: 'images/thumbnail-pinescent.gif',
     tags: 'Photoshop, Animation, Motion Graphics',
@@ -88,7 +104,7 @@ angular.module('appServices', [])
     date: '06.03.16',
     detail: 'I am learning so much from Alex Grigg about animation specifically in Photoshop and I hope to learn more in the future.',
   }, {
-    id: 1,
+    id: 3,
     title: 'JB',
     thumbnail: 'images/thumbnail-jb.png',
     tags: 'Portrait, Acrylic, Painting',
@@ -96,7 +112,7 @@ angular.module('appServices', [])
     date: '05.26.16',
     detail: 'Acrylic Portrait of the hunky Justin Beiber',
   }, {
-    id: 2,
+    id: 4,
     title: 'Character Animation Walk Cycle',
     thumbnail: 'images/thumbnail-character.png',
     tags: 'Character Design, After Effects, Motion Graphics',
@@ -104,7 +120,7 @@ angular.module('appServices', [])
     date: '02.20.16',
     detail: 'Character animation walk cycle done in After Effects. Learning from the Frasier Davidson Skillshare class.',
   }, {
-    id: 3,
+    id: 5,
     title: 'Overwatch Art',
     thumbnail: 'images/thumbnail-dva.png',
     tags: "Character Design, Digital Painting, Overwatch",
@@ -112,7 +128,7 @@ angular.module('appServices', [])
     date: '03.23.16',
     detail: 'Photoshop Painting of D.Va from the new Overwatch',
   }, {
-    id: 4,
+    id: 6,
     title: 'Insight',
     thumbnail: 'images/thumbnail-insight.png',
     tags: "Logo Design, Branding",
@@ -120,16 +136,8 @@ angular.module('appServices', [])
     date: '12.10.15',
     detail: 'Branding and logo options for Insight',
   }, {
-    id: 5,
-    title: 'White Tiger IT',
-    thumbnail: 'images/thumbnail-whitetiger.png',
-    tags: "Branding, Logo Design, Illustrator",
-    image: 'images/whitetiger.png',
-    date: '10.04.15',
-    detail: 'Branding and logo design for school group project. Project was to create a mock-up tech business and to design the branding of the fake business.',
-  }, {
-    id: 6,
-    title: 'Starbucks',
+    id: 7,
+    title: 'Starbucks Animation',
     thumbnail: 'images/thumbnail-starbucks.png',
     tags: "Motion Graphics, After Effects, Branding",
     image: 'images/starbucks.png',
@@ -137,7 +145,7 @@ angular.module('appServices', [])
     link: 'https://vimeo.com/164171013',
     detail: 'Branding and animation practice with Starbucks holiday drinks. Also mixed the audio in Fruity Loops Studio.',
   }, {
-    id: 7,
+    id: 8,
     title: 'Alliance',
     thumbnail: 'images/thumbnail-alliance.png',
     tags: "Logo Design, Illustrator, Branding",
@@ -145,7 +153,7 @@ angular.module('appServices', [])
     date: '01.12.15',
     detail: 'I got the opportunity to help create the logo for a local chiropractor office in Eagle, Idaho called Alliance Physical Medicine. It was a great learning experience and I hope to do more logo design in the future.',
   }, {
-    id: 8,
+    id: 9,
     title: 'Beyoncé',
     thumbnail: 'images/thumbnail-bey.png',
     tags: "Digital Painting, Photoshop",
