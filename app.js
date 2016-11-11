@@ -101,7 +101,7 @@ angular.module('appServices', [])
     title: 'dRecovery Logo',
     thumbnail: 'images/thumbnail-drecovery.png',
     tags: 'Branding, Logo, Money',
-    image: 'images/drecovery.png',
+    image: 'images/dRecovery.png',
     date: '06.28.16',
     detail: 'Recovery from Debt! Quick logo design for a finance app with inspiration and style from the Everydollar app.',
   }, {
