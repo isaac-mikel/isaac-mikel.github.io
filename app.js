@@ -87,7 +87,7 @@ angular.module('appServices', [])
     image: 'images/ridgeview.png',
     date: '02.11.17',
     detail: 'A little practice with sports designs and halftones.',
-  },{
+  }, {
     id: 1,
     title: 'Ihandy Logo',
     thumbnail: 'images/thumbnail-ihandy.png',
