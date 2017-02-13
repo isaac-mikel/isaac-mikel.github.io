@@ -81,6 +81,14 @@ angular.module('appServices', [])
 .factory('Model', function() {
   var data = [{
     id: 0,
+    title: 'Ridgeview Football',
+    thumbnail: 'images/thumbnail-ridgeview.png',
+    tags: 'Football, Sports, Illustrator',
+    image: 'images/ridgeview.png',
+    date: '02.11.17',
+    detail: 'A little practice with sports designs and halftones.',
+  },{
+    id: 1,
     title: 'Ihandy Logo',
     thumbnail: 'images/thumbnail-ihandy.png',
     tags: 'Handy, Man, Branding',
@@ -89,7 +97,7 @@ angular.module('appServices', [])
     link: 'https://ihandymeridian.com',
     detail: 'Local logo and branding for the handiest man in the land.',
   }, {
-    id: 1,
+    id: 2,
     title: 'Ace Painting Logo',
     thumbnail: 'images/thumbnail-acepainting.png',
     tags: 'Branding, Logo, Illustrator',
@@ -97,7 +105,7 @@ angular.module('appServices', [])
     date: '06.30.16',
     detail: 'Lil logo for a painting business in Toronto.',
   }, {
-    id: 2,
+    id: 3,
     title: 'dRecovery Logo',
     thumbnail: 'images/thumbnail-drecovery.png',
     tags: 'Branding, Logo, Money',
@@ -105,7 +113,7 @@ angular.module('appServices', [])
     date: '06.28.16',
     detail: 'Recovery from Debt! Quick logo design for a finance app with inspiration and style from the Everydollar app.',
   }, {
-    id: 3,
+    id: 4,
     title: 'Team Galaxy',
     thumbnail: 'images/thumbnail-teamgalaxy.png',
     tags: 'Illustrator, Logo, Space',
@@ -113,7 +121,7 @@ angular.module('appServices', [])
     date: '06.05.16',
     detail: 'It was an out of this world experience designing this one for a gaming team! The inspiration and style came from Emrich Office and his Bottle Logic branding.',
   }, {
-    id: 4,
+    id: 5,
     title: 'Pine Scent',
     thumbnail: 'images/thumbnail-pinescent.gif',
     tags: 'Photoshop, Animation, Motion Graphics',
@@ -121,7 +129,7 @@ angular.module('appServices', [])
     date: '06.03.16',
     detail: 'I am learning so much from Alex Grigg about animation specifically in Photoshop and I hope to learn more in the future.',
   }, {
-    id: 5,
+    id: 6,
     title: 'JB',
     thumbnail: 'images/thumbnail-jb.png',
     tags: 'Portrait, Acrylic, Painting',
@@ -129,7 +137,7 @@ angular.module('appServices', [])
     date: '05.26.16',
     detail: 'Acrylic Portrait of the hunky Justin Beiber',
   }, {
-    id: 6,
+    id: 7,
     title: 'Character Animation Walk Cycle',
     thumbnail: 'images/thumbnail-character.png',
     tags: 'Character Design, After Effects, Motion Graphics',
@@ -137,7 +145,7 @@ angular.module('appServices', [])
     date: '02.20.16',
     detail: 'Character animation walk cycle done in After Effects. Learning from the Frasier Davidson Skillshare class.',
   }, {
-    id: 7,
+    id: 8,
     title: 'Overwatch Art',
     thumbnail: 'images/thumbnail-dva.png',
     tags: "Character Design, Digital Painting, Overwatch",
@@ -145,7 +153,7 @@ angular.module('appServices', [])
     date: '03.23.16',
     detail: 'Photoshop Painting of D.Va from the new Overwatch',
   }, {
-    id: 8,
+    id: 9,
     title: 'Insight',
     thumbnail: 'images/thumbnail-insight.png',
     tags: "Logo Design, Branding",
@@ -153,7 +161,7 @@ angular.module('appServices', [])
     date: '12.10.15',
     detail: 'Branding and logo options for Insight',
   }, {
-    id: 9,
+    id: 10,
     title: 'Starbucks Animation',
     thumbnail: 'images/thumbnail-starbucks.png',
     tags: "Motion Graphics, After Effects, Branding",
@@ -162,7 +170,7 @@ angular.module('appServices', [])
     link: 'https://vimeo.com/164171013',
     detail: 'Branding and animation practice with Starbucks holiday drinks. Also mixed the audio in Fruity Loops Studio.',
   }, {
-    id: 10,
+    id: 11,
     title: 'Alliance',
     thumbnail: 'images/thumbnail-alliance.png',
     tags: "Logo Design, Illustrator, Branding",
@@ -170,7 +178,7 @@ angular.module('appServices', [])
     date: '01.12.15',
     detail: 'I got the opportunity to help create the logo for a local chiropractor office in Eagle, Idaho called Alliance Physical Medicine. It was a great learning experience and I hope to do more logo design in the future.',
   }, {
-    id: 11,
+    id: 12,
     title: 'Beyoncé',
     thumbnail: 'images/thumbnail-bey.png',
     tags: "Digital Painting, Photoshop",
