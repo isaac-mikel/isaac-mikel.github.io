@@ -81,12 +81,12 @@ angular.module('appServices', [])
 .factory('Model', function() {
   var data = [{
     id: 0,
-    title: 'Ridgeview Football',
-    thumbnail: 'images/thumbnail-ridgeview.png',
-    tags: 'Football, Sports, Illustrator',
-    image: 'images/ridgeview.png',
-    date: '02.11.17',
-    detail: 'A little practice with sports designs and halftones.',
+    title: 'First Timers Only',
+    thumbnail: 'images/thumbnail-firsttimers.png',
+    tags: 'Github, Illustrator, Twitter',
+    image: 'images/firsttimers.png',
+    date: '03.23.17',
+    detail: 'A little banner design for the @first_tmrs_only Twitter account.',
   }, {
     id: 1,
     title: 'Ihandy Logo',
