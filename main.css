@@ -153,13 +153,13 @@ img {
 }
 
 ::-moz-selection {
-    background: #66676c;
-    color: #fafafa;
+    background: #eff28c;
+    color: #222223;
 }
 
 ::selection {
-    background: #66676c;
-    color: #fafafa;
+    background: #eff28c;
+    color: #222223;
 }
 
 html {
