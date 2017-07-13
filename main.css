@@ -14,7 +14,7 @@ Branch: master Find file Copy pathisaac-mikel.github.io/main.css
 @isaac-mikel isaac-mikel initial commit
 1 contributor
 RawBlameHistory     508 lines (431 sloc)  8.59 KB
-@import url(https://fonts.googleapis.com/css?family=Karla:400,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 
 * {
     -moz-box-sizing: border-box;
