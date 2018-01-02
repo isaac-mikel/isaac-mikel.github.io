@@ -97,14 +97,6 @@ angular.module('appServices', [])
     link: 'https://ihandymeridian.com',
     detail: 'Local logo and branding for the handiest man in the land.',
   }, {
-    id: 2,
-    title: 'Ace Painting Logo',
-    thumbnail: 'images/thumbnail-acepainting.png',
-    tags: 'Branding, Logo, Illustrator',
-    image: 'images/acepainting.png',
-    date: '06.30.16',
-    detail: 'Lil logo for a painting business in Toronto.',
-  }, {
     id: 3,
     title: 'dRecovery Logo',
     thumbnail: 'images/thumbnail-drecovery.png',
@@ -129,14 +121,6 @@ angular.module('appServices', [])
     date: '06.03.16',
     detail: 'I am learning so much from Alex Grigg about animation specifically in Photoshop and I hope to learn more in the future.',
   }, {
-    id: 6,
-    title: 'JB',
-    thumbnail: 'images/thumbnail-jb.png',
-    tags: 'Portrait, Acrylic, Painting',
-    image: 'images/jb.png',
-    date: '05.26.16',
-    detail: 'Acrylic Portrait of the hunky Justin Beiber',
-  }, {
     id: 7,
     title: 'Character Animation Walk Cycle',
     thumbnail: 'images/thumbnail-character.png',
@@ -152,14 +136,6 @@ angular.module('appServices', [])
     image: 'images/thumbnail-dva.png',
     date: '03.23.16',
     detail: 'Photoshop Painting of D.Va from the new Overwatch',
-  }, {
-    id: 9,
-    title: 'Insight',
-    thumbnail: 'images/thumbnail-insight.png',
-    tags: "Logo Design, Branding",
-    image: 'images/insight.png',
-    date: '12.10.15',
-    detail: 'Branding and logo options for Insight',
   }, {
     id: 10,
     title: 'Starbucks Animation',
@@ -177,14 +153,6 @@ angular.module('appServices', [])
     image: 'images/alliance.png',
     date: '01.12.15',
     detail: 'I got the opportunity to help create the logo for a local chiropractor office in Eagle, Idaho called Alliance Physical Medicine. It was a great learning experience and I hope to do more logo design in the future.',
-  }, {
-    id: 12,
-    title: 'Beyoncé',
-    thumbnail: 'images/thumbnail-bey.png',
-    tags: "Digital Painting, Photoshop",
-    image: 'images/bey.png',
-    date: '1.08.15',
-    detail: 'Digital Painting of Beyoncé done in Photoshop and Sketchbook Pro.',
   }
 ];
 
