@@ -97,7 +97,7 @@ angular.module('appServices', [])
     link: 'https://ihandymeridian.com',
     detail: 'Local logo and branding for the handiest man in the land.',
   }, {
-    id: 3,
+    id: 2,
     title: 'dRecovery Logo',
     thumbnail: 'images/thumbnail-drecovery.png',
     tags: 'Branding, Logo, Money',
@@ -105,7 +105,7 @@ angular.module('appServices', [])
     date: '06.28.16',
     detail: 'Recovery from Debt! Quick logo design for a finance app with inspiration and style from the Everydollar app.',
   }, {
-    id: 4,
+    id: 3,
     title: 'Team Galaxy',
     thumbnail: 'images/thumbnail-teamgalaxy.png',
     tags: 'Illustrator, Logo, Space',
@@ -113,7 +113,7 @@ angular.module('appServices', [])
     date: '06.05.16',
     detail: 'It was an out of this world experience designing this one for a gaming team! The inspiration and style came from Emrich Office and his Bottle Logic branding.',
   }, {
-    id: 5,
+    id: 4,
     title: 'Pine Scent',
     thumbnail: 'images/thumbnail-pinescent.gif',
     tags: 'Photoshop, Animation, Motion Graphics',
@@ -121,7 +121,7 @@ angular.module('appServices', [])
     date: '06.03.16',
     detail: 'I am learning so much from Alex Grigg about animation specifically in Photoshop and I hope to learn more in the future.',
   }, {
-    id: 7,
+    id: 5,
     title: 'Character Animation Walk Cycle',
     thumbnail: 'images/thumbnail-character.png',
     tags: 'Character Design, After Effects, Motion Graphics',
@@ -129,7 +129,7 @@ angular.module('appServices', [])
     date: '02.20.16',
     detail: 'Character animation walk cycle done in After Effects. Learning from the Frasier Davidson Skillshare class.',
   }, {
-    id: 8,
+    id: 6,
     title: 'Overwatch Art',
     thumbnail: 'images/thumbnail-dva.png',
     tags: "Character Design, Digital Painting, Overwatch",
@@ -137,7 +137,7 @@ angular.module('appServices', [])
     date: '03.23.16',
     detail: 'Photoshop Painting of D.Va from the new Overwatch',
   }, {
-    id: 9,
+    id: 7,
     title: 'Starbucks Animation',
     thumbnail: 'images/thumbnail-starbucks.png',
     tags: "Motion Graphics, After Effects, Branding",
@@ -146,7 +146,7 @@ angular.module('appServices', [])
     link: 'https://vimeo.com/164171013',
     detail: 'Branding and animation practice with Starbucks holiday drinks. Also mixed the audio in Fruity Loops Studio.',
   }, {
-    id: 10,
+    id: 8,
     title: 'Alliance',
     thumbnail: 'images/thumbnail-alliance.png',
     tags: "Logo Design, Illustrator, Branding",
