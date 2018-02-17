@@ -137,7 +137,7 @@ angular.module('appServices', [])
     date: '03.23.16',
     detail: 'Photoshop Painting of D.Va from the new Overwatch',
   }, {
-    id: 10,
+    id: 9,
     title: 'Starbucks Animation',
     thumbnail: 'images/thumbnail-starbucks.png',
     tags: "Motion Graphics, After Effects, Branding",
@@ -146,7 +146,7 @@ angular.module('appServices', [])
     link: 'https://vimeo.com/164171013',
     detail: 'Branding and animation practice with Starbucks holiday drinks. Also mixed the audio in Fruity Loops Studio.',
   }, {
-    id: 11,
+    id: 10,
     title: 'Alliance',
     thumbnail: 'images/thumbnail-alliance.png',
     tags: "Logo Design, Illustrator, Branding",
