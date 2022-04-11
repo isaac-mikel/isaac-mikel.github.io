@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="app" ng-controller="MainCtrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Isaac Mikel">
+    <meta name="description" content="Isaac Mikel - Graphic Designer">
+    <meta name="theme-color" content="#000">
+    <title>Isaac Mikel</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-route.js"></script>
+    <script src="app.js"></script>
+    <!-- <script>
+            $(document).ready(function(){
+                $(".thumbnail-item").click(function(){
+                    $(".right-item2").slideToggle("fast");
+                });
+                $("#close").click(function(){
+                    $(".right-item2").hide("fast");
+                });
+            });
+        </script> -->
+</head>
+<body id="fade">
+
+    <page>
+        <div class="left-item-float">
+            <div class="icon">
+                <a href="#/"><img src="images/icon.png" alt="logo" width="50px" height="50px"></a>
+                <div class="info">
+                    <h1>Isaac Mikel</h1>
+                    <p>Graphic design is my passion</p>
+                </div>
+            </div>
+
+            <hr class="left-hr">
+            <div class="social-container">
+                <div class="social"><b>email</b><a href="mailto:contact@isaacmikel.design">contact@isaacmikel.design</a></div>
+                <div class="social"><b>behance</b><a href="//behance.net/icusficus" target="_blank">/icusficus</a></div>
+                <div class="social"><b>twitter</b><a href="//twitter.com/icusficus" target="_blank">@icusficus</a></div>
+                <div class="social"><b>working at</b><a href="//gamefaceathletics.com" target="_blank">gameface athletics</a></div>
+                <div class="social"><b>phone</b>208.258.4111</a>
+                </div>
+                <br>
+                <div class="social"><b>resume</b><a href="images/resume.pdf" target="_blank">résumé</a></div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="left-item">
+            </div>
+
+            <br>
+            <!-- <div class="right-item2" style="display:none">
+
+                   <div class="image-info">
+          <img src="/images/thumbnail-badlionicons.png" class="thumbnail-info"></img>
+                       <h1>Badlion Icons</h1>
+                       <br>
+                       <h2>A set of icons for the Badlion website.</h2>
+                       <br>
+                       <b>20 December 2015</b>
+                   </div>
+
+               </div> -->
+
+            <!-- <div class="right-item">
+                   <div class="thumbnail-item" id="1"><img src="images/thumbnail-character.png" class="thumbnail"></img></div>
+                   <div class="thumbnail-item" id="2"><img src="images/thumbnail-character.png" class="thumbnail"></img></div>
+                   <div class="thumbnail-item"><img src="images/thumbnail-character.png" class="thumbnail"></img></div>
+                   <div class="thumbnail-item"><img src="images/thumbnail-badlionicons.png" class="thumbnail"></img></div>
+                   <div class="thumbnail-item"><img src="images/thumbnail-badlionicons.png" class="thumbnail"></img></div>
+                   <div class="thumbnail-item"><img src="images/thumbnail-badlionicons.png" class="thumbnail"></img></div>
+                   <div class="thumbnail-item"><img src="images/thumbnail-badlionicons.png" class="thumbnail"></img></div>
+
+               </div> -->
+            <div>
+                <ng-view></ng-view>
+                <!-- <div class="thumbnail-item" ng-repeat="item in portfolioItems">
+                    <a href="#{{item.title}}"><img class="thumbnail" ng-src="{{item.thumbnail}}" ng-class="{thumbnail_hover: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false"></a>
+                    <a href="#{{item.title}}">{{item.title}}</a>
+                    <br>
+                    <b>{{item.date}}</b>
+                </div> -->
+                <!-- Inline Templates (Partials) -->
+
+                <script type=text/ng-template id=home.html>
+                    <div class="right-item">
+                        <div class="thumbnail-item" ng-repeat="item in items">
+                            <a href="#/{{item.id}}"><img ng-src="{{item.thumbnail}}" class="thumbnail"></a>
+                            <a href="#{{item.title}}">{{item.title}}</a>
+                            <br>
+                            <b>{{item.date}}</b>
+                        </div>
+                    </div>
+                </script>
+
+                <script type=text/ng-template id=detail.html>
+                    <div class="largeimage">
+                        <h1 style="display:inline-block;">{{item.title}}</h1><a href="#/" id="back_button">back</a>
+                        <br>
+                        <br>
+                        <a href="{{item.link}}" target="_blank">{{item.link}}</a>
+                        <div class="thumbnail-item"><img class="largeimage" ng-src="{{item.image}}"></div>
+                        <h3>{{item.detail}}</h3>
+                        <div class="detail_footer">
+                            <div class="detail_footer_item"><h2 style="margin-right:1em;">date </h2><h3>{{item.date}}</h3></div>
+                            <div class="detail_footer_item"><h2 style="margin-right:1em;">tags</h2><h3>{{item.tags}}</h3></div>
+                        </div>
+                        <div class="footer">
+                        </div>
+                    </div>
+
+                </script>
+
+            </div>
+
+    </page>
+</body>
+
+</html>
