@@ -2,154 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
 
-    <!-- Icon Sheet -->
-    <link rel="stylesheet" href="/icons.html">
+  <!-- Icon Sheet -->
+  <link rel="stylesheet" href="/icons.html">
 
-    <!-- JS Include -->
-    <script src="/javascript.js"></script>
-    <title>Ficus Express: LiveRez Animation</title>
+  <!-- JS Include -->
+  <script src="/javascript.js"></script>
+  <title>Ficus Express: LiveRez Animation</title>
 </head>
 
 <body>
-    <!-- Anchor link to top of page -->
-    <a name="top"></a>
-    <!-- Anchor link to top of page -->
+  <!-- Anchor link to top of page -->
+  <a name="top"></a>
+  <!-- Anchor link to top of page -->
 
-    <div class="flex-big-container">
-        <div class="flex-head flex-head-logos">
-            <video autoplay="" muted="" loop="" playsinline="" playbackspeed=".5" id="home-video-1">
-                <source src="/images/header-anim-animation.mp4" type="video/mp4">
-            </video>
-            <a href="/index.html" >
-              <div id="logo-sprite"></div>
+  <div class="flex-big-container">
+    <div class="flex-head flex-head-logos">
+      <video autoplay="" muted="" loop="" playsinline="" playbackspeed=".5" id="home-video-1">
+        <source src="/images/header-anim-animation.mp4" type="video/mp4">
+      </video>
+      <a href="/index.html">
+        <div id="logo-sprite"></div>
+      </a>
+    </div>
+    <div class="page-container">
+      <div class="nav-container">
+        <a href="javascript:void(0);" class="icon" onclick="hamBurger()">
+          <img src="/images/hamburger.png" id="hamburger" />
+        </a>
+        <div id="menu-links" class="menu-links">
+          <a class="menu-item" href="/index.html">Work</a>
+          <a class="menu-item" href="/contact.html">About</a>
+          <a class="menu-item" href="/contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="flex-content content-container" id="content-container">
+        <div class="nav-container">
+          <a href="javascript:void(0);" class="icon" onclick="hamBurger()">
+            <img src="/images/hamburger.png" id="hamburger" />
+          </a>
+          <div id="menu-links">
+            <a class="menu-item" href="/index.html">Work</a>
+            <a class="menu-item" href="/contact.html">About</a>
+            <a class="menu-item" href="/contact.html">Contact</a>
+          </div>
+        </div>
+        <a class="breadcrumb" href="/index.html#nav-icon-animation">&#8592; Back</a>
+        <div class="hero-image hero-starbucks">
+          <h1>Starbucks Animation</h1>
+        </div>
+        <div class="one-column">
+          <a href="/index.html#nav-icon-animation" id="label-animation">
+            <p>Animation</p>
+          </a>
+          <small>Dec 2020</small>
+          <h2>Intro</h2>
+          <p>A fun animation project to practice and get more comfortable using After Effects and Illustrator. I picked
+            a frequent brand that I had seen advertising for and wanted to create a mock drink promotion.</p>
+        </div>
+        <div class="one-column">
+        </div>
+        <div class="two-column">
+          <div>
+            <h2>Creative Brief</h2>
+            <p>After concepting, I created each asset in Illustrator and then exported each piece to After Effects to
+              add in motion and sound effects.</p>
+          </div>
+
+          <a href="#starbucks1" class="starbucks1 img-hover">
+            <div class="zoom-icon"></div>
+          </a>
+          <a href="#" id="starbucks1" class="lightbox">
+            <span style="background-image: url(/images/starbucks1.jpg);"></span>
           </a>
         </div>
-<div class="page-container">
-  <div class="nav-container">
-    <a href="javascript:void(0);" class="icon" onclick="hamBurger()">
-        <img src="/images/hamburger.png" id="hamburger" />
-    </a>
-    <div id="menu-links" class="menu-links">
-        <a class="menu-item" href="/index.html">Work</a>
-        <a class="menu-item" href="/contact.html">About</a>
-        <a class="menu-item" href="/contact.html">Contact</a>
+
+        <div class="one-column">
+        </div>
+        <div class="one-column">
+          <h2>Final Animation</h2>
+        </div>
+        <div class="one-column">
+          <video style="background-color:#f5ffff;" autoplay="" muted="" loop="" playsinline="" playbackspeed=".5"
+            controls>
+            <source src="/images/starbucks.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="one-column">
+        </div>
+
+        <div class="one-column">
+        </div>
+        <div class="one-column">
+        </div>
+
+      </div>
+    </div>
+    <div class="bottom-nav">
+      <h2>Browse some more?</h2>
+      <div class="link-container">
+        <a href="/index.html#nav-icon-logos" class="nav-card" id="nav-card-logos">
+          <i id="nav-icon-logos"></i>
+          <h3>Logos</h3>
+        </a>
+        <a href="/index.html#nav-icon-illustrations" class="nav-card" id="nav-card-illustrations">
+          <i id="nav-icon-illustrations"></i>
+          <h3>Illustrations</h3>
+        </a>
+        <a href="/index.html#nav-icon-animation" class="nav-card" id="nav-card-animation">
+          <i id="nav-icon-animation"></i>
+          <h3>Animation</h3>
+        </a>
+        <a href="/index.html#nav-icon-package" class="nav-card" id="nav-card-package">
+          <i id="nav-icon-package"></i>
+          <h3>Package Design</h3>
+        </a>
+        <a href="/index.html#nav-icon-video" class="nav-card" id="nav-card-video">
+          <i id="nav-icon-video"></i>
+          <h3>Video Editing</h3>
+        </a>
+        <a href="/index.html#nav-icon-fun" class="nav-card" id="nav-card-fun">
+          <i id="nav-icon-fun"></i>
+          <h3>Fun Stuff</h3>
+        </a>
+      </div>
     </div>
   </div>
+  <a href="#top">
+    <div class="footer-logo"></div>
+  </a>
 
-        <div class="flex-content content-container" id="content-container">
-            <div class="nav-container">
-                <a href="javascript:void(0);" class="icon" onclick="hamBurger()">
-                    <img src="/images/hamburger.png" id="hamburger" />
-                </a>
-                <div id="menu-links">
-                    <a class="menu-item" href="/index.html">Work</a>
-                    <a class="menu-item" href="/contact.html">About</a>
-                    <a class="menu-item" href="/contact.html">Contact</a>
-                  </div>
-            </div>
-            <a class="breadcrumb" href="/index.html#nav-icon-animation">&#8592; Back</a>
-            <div class="hero-image hero-starbucks">
-                <h1>Starbucks Animation</h1>
-              </div>
-            <div class="one-column">
-              <a href="/index.html#nav-icon-animation" id="label-animation"><p>Animation</p></a>
-              <small>Dec 2020</small>
-              <h2>Intro</h2>
-              <p>A fun animation project to practice and get more comfortable using After Effects and Illustrator. I picked a frequent brand that I had seen advertising for and wanted to create a mock drink promotion.</p>
-            </div>
-            <div class="one-column">
-            </div>
-            <div class="two-column">
-              <div>
-                <h2>Creative Brief</h2>
-                <p>After concepting, I created each asset in Illustrator and then exported each piece to After Effects to add in motion and sound effects.</p>
-              </div>
-              
-              <a href="#starbucks1" class="starbucks1 img-hover">
-                <div class="zoom-icon"></div>
-              </a>
-              <a href="#" id="starbucks1" class="lightbox">
-                <span style="background-image: url(/images/starbucks1.jpg);"></span>
-              </a>
-            </div>
-            
-            <div class="one-column">
-            </div>
-            <div class="one-column">
-              <h2>Final Animation</h2>
-            </div>
-            <div class="one-column" >
-              <video style="background-color:#f5ffff;" autoplay="" muted="" loop="" playsinline="" playbackspeed=".5" controls>
-                <source src="/images/starbucks.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="one-column">
-            </div>
-            
-            <div class="one-column">
-            </div>
-            <div class="one-column">
-            </div>
-            
-          </div>
-        </div>
-        <div class="bottom-nav">
-          <h2>Browse some more?</h2>
-          <div class="link-container">
-            <a href="/index.html#nav-icon-logos" class="nav-card" id="nav-card-logos">
-              <i id="nav-icon-logos"></i>
-              <h3>Logos</h3>
-            </a>
-            <a href="/index.html#nav-icon-illustrations" class="nav-card" id="nav-card-illustrations">
-              <i id="nav-icon-illustrations"></i>
-              <h3>Illustrations</h3>
-            </a>
-            <a href="/index.html#nav-icon-animation" class="nav-card" id="nav-card-animation">
-              <i id="nav-icon-animation"></i>
-              <h3>Animation</h3>
-            </a>
-            <a href="/index.html#nav-icon-package" class="nav-card" id="nav-card-package">
-              <i id="nav-icon-package"></i>
-              <h3>Package Design</h3>
-            </a>
-            <a href="/index.html#nav-icon-video" class="nav-card" id="nav-card-video">
-              <i id="nav-icon-video"></i>
-              <h3>Video Editing</h3>
-            </a>
-            <a href="/index.html#nav-icon-fun" class="nav-card" id="nav-card-fun">
-              <i id="nav-icon-fun"></i>
-              <h3>Fun Stuff</h3>
-            </a>
-          </div>
-        </div>
+  <footer>
+    <div class="footer-content-1">
+      <a class="footer-items" href="/index.html">Work</a>
+      <a class="footer-items" href="/contact.html">About</a>
     </div>
-    <a href="#top"><div class="footer-logo"></div></a>
-
-    <footer>
-        <div class="footer-content-1">
-            <a class="footer-items" href="/index.html">Work</a>
-            <a class="footer-items" href="/contact.html">About</a>
-        </div>
-        <div class="footer-content-2">
-            <a class="footer-items" href="/contact.html">Contact</a>
-            <a class="footer-items" target="_blank" href="mailto:isaac.mikel2397@gmail.com">Email</a>
-            <a class="footer-items" target="_blank" href="https://www.linkedin.com/in/isaac-mikel/">Linkedin</a>
-            <a class="footer-items" target="_blank" href="https://twitter.com/icusficus">Twitter</a>
-            <a class="footer-items" target="_blank" href="https://www.instagram.com/icusficus">Instagram</a> 
-        </div>
-        <div class="footer-content-2">
-            <a class="footer-items" href="/sitemap.xml">Sitemap</a>         
-        </div>
-        <div id="copyright">
-        <small>&copy; Copyright 2022, Fixus Express</small>
-        </div>
-    </footer>
+    <div class="footer-content-2">
+      <a class="footer-items" href="/contact.html">Contact</a>
+      <a class="footer-items" target="_blank" href="mailto:isaac.mikel2397@gmail.com">Email</a>
+      <a class="footer-items" target="_blank" href="https://www.linkedin.com/in/isaac-mikel/">Linkedin</a>
+      <a class="footer-items" target="_blank" href="https://twitter.com/icusficus">Twitter</a>
+      <a class="footer-items" target="_blank" href="https://www.instagram.com/icusficus">Instagram</a>
+    </div>
+    <div class="footer-content-2">
+      <a class="footer-items" href="/sitemap.xml">Sitemap</a>
+    </div>
+    <div id="copyright">
+      <small>&copy; Copyright 2022, Fixus Express</small>
+    </div>
+  </footer>
 </body>
+
 </html>

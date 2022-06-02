@@ -2,242 +2,246 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
 
-    <!-- Icon Sheet -->
-    <link rel="stylesheet" href="/icons.html">
+  <!-- Icon Sheet -->
+  <link rel="stylesheet" href="/icons.html">
 
-    <!-- JS Include -->
-    <script src="/javascript.js"></script>
-    <title>Ficus Express: Contact</title>
+  <!-- JS Include -->
+  <script src="/javascript.js"></script>
+  <title>Ficus Express: Contact</title>
 </head>
 
 <body>
-    <!-- Anchor link to top of page -->
-    <a name="top"></a>
-    <!-- Anchor link to top of page -->
+  <!-- Anchor link to top of page -->
+  <a name="top"></a>
+  <!-- Anchor link to top of page -->
 
-    <div class="flex-big-container">
-        <div class="flex-head flex-head-logos">
-            <video autoplay="" muted="" loop="" playsinline="" playbackspeed=".5" id="home-video-1">
-                <source src="/images/header-anim-illustration.mp4" type="video/mp4">
-            </video>
-            <a href="/index.html" >
-              <div id="logo-sprite"></div>
-          </a>
+  <div class="flex-big-container">
+    <div class="flex-head flex-head-logos">
+      <video autoplay="" muted="" loop="" playsinline="" playbackspeed=".5" id="home-video-1">
+        <source src="/images/header-anim-illustration.mp4" type="video/mp4">
+      </video>
+      <a href="/index.html">
+        <div id="logo-sprite"></div>
+      </a>
+    </div>
+    <div class="page-container">
+      <div class="nav-container">
+        <a href="javascript:void(0);" class="icon" onclick="hamBurger()">
+          <img src="/images/hamburger.png" id="hamburger" />
+        </a>
+        <div id="menu-links" class="menu-links">
+          <a class="menu-item" href="/index.html">Work</a>
+          <a class="menu-item" href="/contact.html">About</a>
+          <a class="menu-item" href="/contact.html">Contact</a>
         </div>
-        <div class="page-container">
-        <div class="nav-container">
-          <a href="javascript:void(0);" class="icon" onclick="hamBurger()">
-              <img src="/images/hamburger.png" id="hamburger" />
-          </a>
-          <div id="menu-links" class="menu-links">
-              <a class="menu-item" href="/index.html">Work</a>
-              <a class="menu-item" href="/contact.html">About</a>
-              <a class="menu-item" href="/contact.html">Contact</a>
-          </div>
       </div>
-        <div class="flex-content content-container" id="content-container">
-            
-              <!-- LOGOS -->
-              <a class="nav-card" id="nav-card-logos" href="javascript:void(0);" onclick="cardExpandlogos()">
-                <div>
-                    <i id="nav-icon-logos"></i>
-                    <h2>Logos</h2>
-                    <img src="/images/arrow-up.svg" id="arrow-up-1" />
-                </div>
+      <div class="flex-content content-container" id="content-container">
+
+        <!-- LOGOS -->
+        <a class="nav-card" id="nav-card-logos" href="javascript:void(0);" onclick="cardExpandlogos()">
+          <div>
+            <i id="nav-icon-logos"></i>
+            <h2>Logos</h2>
+            <img src="/images/arrow-up.svg" id="arrow-up-1" />
+          </div>
+        </a>
+        <div class="card-preview" id="card-preview-logos">
+          <div class="cards-item">
+            <a href="/liverez.html" class="card">
+              <div class="card-image liverez"></div>
+              <div class="card__content">
+                <h3>LiveRez</h3>
+                <button href="/liverez.html" class="button">View now</button>
+              </div>
             </a>
-            <div class="card-preview" id="card-preview-logos">
-                <div class="cards-item">
-                    <a href="/idaho-helicopters.html"  class="card">
-                      <div class="card-image idaho-helicopters"></div>
-                      <div class="card__content">
-                        <h3>Idaho Helicopters</h3>
-                        <button href="/idaho-helicopters.html" class="button">View now</button>
-                      </div>
-                    </a>
-                    <a href="/daily-quiz-pro.html" class="card">
-                        <div class="card-image daily-quiz-pro"></div>
-                        <div class="card__content">
-                          <h3>Daily Quiz Pro</h3>
-                          <button href="/daily-quiz-pro.html" class="button">View now</button>
-                        </div>
-                    </a>
-                    <a href="/liverez.html" class="card">
-                        <div class="card-image liverez"></div>
-                        <div class="card__content">
-                          <h3>LiveRez</h3>
-                          <button href="/liverez.html" class="button">View now</button>
-                        </div>
-                    </a>
-                    <a href="/watchdog.html" class="card">
-                        <div class="card-image watchdog-security"></div>
-                        <div class="card__content">
-                          <h3>Watchdog Security</h3>
-                          <button href="/watchdog.html" class="button">View now</button>
-                        </div>
-                    </a>
-                </div>
-            </div> 
-            <!-- ILLUSTRATION -->
-            <a class="nav-card" id="nav-card-illustrations" href="javascript:void(0);" onclick="cardExpandillustrations()">
-                <div>
-                    <i id="nav-icon-illustrations"></i>
-                    <h2>Illustrations</h2>
-                    <img src="/images/arrow-up.svg" id="arrow-up-2" />
-                </div>
+            <a href="/idaho-helicopters.html" class="card">
+              <div class="card-image idaho-helicopters"></div>
+              <div class="card__content">
+                <h3>Idaho Helicopters</h3>
+                <button href="/idaho-helicopters.html" class="button">View now</button>
+              </div>
             </a>
-            <div class="card-preview" id="card-preview-illustration">
-                <div class="cards-item">
-                    <a href="/lr-zoom.html"  class="card">
-                      <div class="card-image liverez-backgrounds"></div>
-                      <div class="card__content">
-                        <h3>LiveRez Zoom Backgrounds</h3>
-                        <button href="/lr-zoom.html" class="button">View now</button>
-                      </div>
-                    </a>
-                    <a href="/lr-xmas.html" class="card">
-                        <div class="card-image liverez-xmas"></div>
-                        <div class="card__content">
-                          <h3>LiveRez Christmas</h3>
-                          <button href="/lr-xmas.html" class="button">View now</button>
-                        </div>
-                    </a>
-                   
-                </div>
-            </div> 
-            <!-- ANIMATION -->
-            <a class="nav-card" id="nav-card-animation" href="javascript:void(0);" onclick="cardExpandanimation()">
-                <div>
-                    <i id="nav-icon-animation"></i>
-                    <h2>Animation</h2>
-                    <img src="/images/arrow-up.svg" id="arrow-up-3" />
-                </div>
+            <a href="/daily-quiz-pro.html" class="card">
+              <div class="card-image daily-quiz-pro"></div>
+              <div class="card__content">
+                <h3>Daily Quiz Pro</h3>
+                <button href="/daily-quiz-pro.html" class="button">View now</button>
+              </div>
             </a>
-            <div class="card-preview" id="card-preview-animation">
-                <div class="cards-item">
-                    <a href="/lr-animation.html"  class="card">
-                      <div class="card-image lr-animation"></div>
-                      <div class="card__content">
-                        <h3>LiveRez</h3>
-                        <button href="/lr-animation.html" class="button">View now</button>
-                      </div>
-                    </a>
-                    <a href="/starbucks.html" class="card">
-                        <div class="card-image starbucks"></div>
-                        <div class="card__content">
-                          <h3>Starbucks</h3>
-                          <button href="/starbucks.html" class="button">View now</button>
-                        </div>
-                    </a>
-                </div>
-            </div> 
-            <!-- PRODUCT DESIGN -->
-            <a class="nav-card" id="nav-card-package" href="javascript:void(0);" onclick="cardExpandpackage()">
-                <div>
-                    <i id="nav-icon-package"></i>
-                    <h2>Package Design</h2>
-                    <img src="/images/arrow-up.svg" id="arrow-up-4" />
-                </div>
+
+            <a href="/watchdog.html" class="card">
+              <div class="card-image watchdog-security"></div>
+              <div class="card__content">
+                <h3>Watchdog Security</h3>
+                <button href="/watchdog.html" class="button">View now</button>
+              </div>
             </a>
-            <div class="card-preview" id="card-preview-package">
-                <div class="cards-item">
-                    <a href="/common-good.html"  class="card">
-                      <div class="card-image common-good"></div>
-                      <div class="card__content">
-                        <h3>Common Good Coffee</h3>
-                        <button href="/common-good.html" class="button">View now</button>
-                      </div>
-                    </a>
-                </div>
-            </div> 
-            <!-- VIDEO EDITING -->
-            <a class="nav-card" id="nav-card-video" href="javascript:void(0);" onclick="cardExpandvideo()">
-                <div>
-                    <i id="nav-icon-video"></i>
-                    <h2>Video Editing</h2>
-                    <img src="/images/arrow-up.svg" id="arrow-up-5" />
-                </div>
-            </a>
-            <div class="card-preview" id="card-preview-video">
-                <div class="cards-item">
-                    <a href="/lr-testimonial.html"  class="card">
-                      <div class="card-image lr-testimonial"></div>
-                      <div class="card__content">
-                        <h3>LiveRez Testimonials</h3>
-                        <button href="/lr-testimonial.html" class="button">View now</button>
-                      </div>
-                    </a>
-                    <a href="/lr-demo.html"  class="card">
-                      <div class="card-image lr-demo"></div>
-                      <div class="card__content">
-                        <h3>LiveRez Demo</h3>
-                        <button href="/lr-demo.html" class="button">View now</button>
-                      </div>
-                    </a>
-                </div>
-            </div> 
-            <!-- FUN STUFF -->
-            <a class="nav-card" id="nav-card-fun" href="javascript:void(0);" onclick="cardExpandfun()">
-                <div>
-                    <i id="nav-icon-fun"></i>
-                    <h2>Fun stuff</h2>
-                    <img src="/images/arrow-up.svg" id="arrow-up-6" />
-                </div>
-            </a> 
-            <div class="card-preview" id="card-preview-fun">
-                <div class="cards-item">
-                    
-                    <a href="/reanimator.html"  class="card">
-                      <div class="card-image reanimator"></div>
-                      <div class="card__content">
-                        <h3>Reanimator</h3>
-                        <button href="/reanimator.html" class="button">View now</button>
-                      </div>
-                    </a>
-                    <a href="/inktober.html" class="card">
-                        <div class="card-image inktober"></div>
-                        <div class="card__content">
-                          <h3>Inktober</h3>
-                          <button href="/inktober.html" class="button">View now</button>
-                        </div>
-                    </a>
-                    <a href="/lr-icons.html" class="card">
-                      <div class="card-image lr-icons"></div>
-                      <div class="card__content">
-                        <h3>LiveRez Icons</h3>
-                        <button href="/lr-icons.html" class="button">View now</button>
-                      </div>
-                  </a>
-                </div>
-            </div>   
+          </div>
         </div>
+        <!-- ILLUSTRATION -->
+        <a class="nav-card" id="nav-card-illustrations" href="javascript:void(0);" onclick="cardExpandillustrations()">
+          <div>
+            <i id="nav-icon-illustrations"></i>
+            <h2>Illustrations</h2>
+            <img src="/images/arrow-up.svg" id="arrow-up-2" />
+          </div>
+        </a>
+        <div class="card-preview" id="card-preview-illustration">
+          <div class="cards-item">
+            <a href="/lr-zoom.html" class="card">
+              <div class="card-image liverez-backgrounds"></div>
+              <div class="card__content">
+                <h3>LiveRez Zoom Backgrounds</h3>
+                <button href="/lr-zoom.html" class="button">View now</button>
+              </div>
+            </a>
+            <a href="/lr-xmas.html" class="card">
+              <div class="card-image liverez-xmas"></div>
+              <div class="card__content">
+                <h3>LiveRez Christmas</h3>
+                <button href="/lr-xmas.html" class="button">View now</button>
+              </div>
+            </a>
+
+          </div>
+        </div>
+        <!-- ANIMATION -->
+        <a class="nav-card" id="nav-card-animation" href="javascript:void(0);" onclick="cardExpandanimation()">
+          <div>
+            <i id="nav-icon-animation"></i>
+            <h2>Animation</h2>
+            <img src="/images/arrow-up.svg" id="arrow-up-3" />
+          </div>
+        </a>
+        <div class="card-preview" id="card-preview-animation">
+          <div class="cards-item">
+            <a href="/lr-animation.html" class="card">
+              <div class="card-image lr-animation"></div>
+              <div class="card__content">
+                <h3>LiveRez</h3>
+                <button href="/lr-animation.html" class="button">View now</button>
+              </div>
+            </a>
+            <a href="/starbucks.html" class="card">
+              <div class="card-image starbucks"></div>
+              <div class="card__content">
+                <h3>Starbucks</h3>
+                <button href="/starbucks.html" class="button">View now</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- PRODUCT DESIGN -->
+        <a class="nav-card" id="nav-card-package" href="javascript:void(0);" onclick="cardExpandpackage()">
+          <div>
+            <i id="nav-icon-package"></i>
+            <h2>Package Design</h2>
+            <img src="/images/arrow-up.svg" id="arrow-up-4" />
+          </div>
+        </a>
+        <div class="card-preview" id="card-preview-package">
+          <div class="cards-item">
+            <a href="/common-good.html" class="card">
+              <div class="card-image common-good"></div>
+              <div class="card__content">
+                <h3>Common Good Coffee</h3>
+                <button href="/common-good.html" class="button">View now</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- VIDEO EDITING -->
+        <a class="nav-card" id="nav-card-video" href="javascript:void(0);" onclick="cardExpandvideo()">
+          <div>
+            <i id="nav-icon-video"></i>
+            <h2>Video Editing</h2>
+            <img src="/images/arrow-up.svg" id="arrow-up-5" />
+          </div>
+        </a>
+        <div class="card-preview" id="card-preview-video">
+          <div class="cards-item">
+            <a href="/lr-testimonial.html" class="card">
+              <div class="card-image lr-testimonial"></div>
+              <div class="card__content">
+                <h3>LiveRez Testimonials</h3>
+                <button href="/lr-testimonial.html" class="button">View now</button>
+              </div>
+            </a>
+            <a href="/lr-demo.html" class="card">
+              <div class="card-image lr-demo"></div>
+              <div class="card__content">
+                <h3>LiveRez Demo</h3>
+                <button href="/lr-demo.html" class="button">View now</button>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- FUN STUFF -->
+        <a class="nav-card" id="nav-card-fun" href="javascript:void(0);" onclick="cardExpandfun()">
+          <div>
+            <i id="nav-icon-fun"></i>
+            <h2>Fun stuff</h2>
+            <img src="/images/arrow-up.svg" id="arrow-up-6" />
+          </div>
+        </a>
+        <div class="card-preview" id="card-preview-fun">
+          <div class="cards-item">
+
+            <a href="/reanimator.html" class="card">
+              <div class="card-image reanimator"></div>
+              <div class="card__content">
+                <h3>Reanimator</h3>
+                <button href="/reanimator.html" class="button">View now</button>
+              </div>
+            </a>
+            <a href="/inktober.html" class="card">
+              <div class="card-image inktober"></div>
+              <div class="card__content">
+                <h3>Inktober</h3>
+                <button href="/inktober.html" class="button">View now</button>
+              </div>
+            </a>
+            <a href="/lr-icons.html" class="card">
+              <div class="card-image lr-icons"></div>
+              <div class="card__content">
+                <h3>LiveRez Icons</h3>
+                <button href="/lr-icons.html" class="button">View now</button>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-    <a href="#top"><div class="footer-logo"></div></a>
-    <footer>
-        <div class="footer-content-1">
-            <a class="footer-items" href="/index.html">Work</a>
-            <a class="footer-items" href="/contact.html">About</a>
-        </div>
-        <div class="footer-content-2">
-            <a class="footer-items" href="/contact.html">Contact</a>
-            <a class="footer-items" target="_blank" href="mailto:isaac.mikel2397@gmail.com">Email</a>
-            <a class="footer-items" target="_blank" href="https://www.linkedin.com/in/isaac-mikel/">Linkedin</a>
-            <a class="footer-items" target="_blank" href="https://twitter.com/icusficus">Twitter</a>
-            <a class="footer-items" target="_blank" href="https://www.instagram.com/icusficus">Instagram</a> 
-        </div>
-        <div class="footer-content-2">
-            <a class="footer-items" href="/sitemap.xml">Sitemap</a>         
-        </div>
-        <div id="copyright">
-        <small>&copy; Copyright 2022, Fixus Express</small>
-        </div>
-    </footer>
+  <a href="#top">
+    <div class="footer-logo"></div>
+  </a>
+  <footer>
+    <div class="footer-content-1">
+      <a class="footer-items" href="/index.html">Work</a>
+      <a class="footer-items" href="/contact.html">About</a>
+    </div>
+    <div class="footer-content-2">
+      <a class="footer-items" href="/contact.html">Contact</a>
+      <a class="footer-items" target="_blank" href="mailto:isaac.mikel2397@gmail.com">Email</a>
+      <a class="footer-items" target="_blank" href="https://www.linkedin.com/in/isaac-mikel/">Linkedin</a>
+      <a class="footer-items" target="_blank" href="https://twitter.com/icusficus">Twitter</a>
+      <a class="footer-items" target="_blank" href="https://www.instagram.com/icusficus">Instagram</a>
+    </div>
+    <div class="footer-content-2">
+      <a class="footer-items" href="/sitemap.xml">Sitemap</a>
+    </div>
+    <div id="copyright">
+      <small>&copy; Copyright 2022, Fixus Express</small>
+    </div>
+  </footer>
 </body>
+
 </html>
