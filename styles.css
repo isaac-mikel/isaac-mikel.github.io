@@ -254,6 +254,7 @@
         top: 0;
         height: 100%;
         z-index: -1;
+        filter:blur(3px)
     }
 
     /* .flex-head-index {
