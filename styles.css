@@ -445,9 +445,9 @@
         width: 300px;
         height: 300px;
         margin: 20px 10px;
-        background-image: url(/images/profile.jpg);
+        background-image: url(/images/profile2.png);
         background-position: center;
-        background-size: 150%;
+        background-size: 140%;
         background-repeat: no-repeat;
         transition: 400ms ease;
 
@@ -1410,12 +1410,11 @@
     }
 
     .table-cell {
-        padding: .3em 0;
+        padding: 0 2em;
         display: flex;
         flex-flow: row wrap;
         gap: 20px;
         width: 100%;
-        padding: 0.25em 1em;
     }
 
     .nav-card {
@@ -1975,7 +1974,7 @@
         }
 
         .table-cell {
-            padding: .3em 2em;
+            padding: 0 2em;
         }
 
         .footer-logo:hover {
