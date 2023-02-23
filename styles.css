@@ -739,21 +739,12 @@
         border-radius: .5em;
         border: 1px solid #2f2f2f;
         width: 100%;
-        height: 350px;
+        height: 500px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         box-shadow: 0 10px 0 black;
         margin-bottom: 10px;
-    }
-
-    .img-full-hover:hover {
-        filter: brightness(.8);
-        transition: 200ms ease-in-out;
-    }
-
-    .img-full-hover:hover .zoom-icon {
-        opacity: 1;
     }
 
     .lightbox {
@@ -2071,10 +2062,6 @@
             height: 300px;
         }
 
-        .img-full-hover {
-            height: 450px;
-        }
-
         .lightbox span {
             height: 80vh;
         }
@@ -2161,10 +2148,9 @@
         }
 
         .img-full-hover {
-            height: 515px;
+            height: 700px;
             background-color: #1f1f1f !important;
             border: 1px solid #2f2f2f;
-            background-size: contain;
         }
 
         .one-column video {
