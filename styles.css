@@ -58,6 +58,7 @@
         margin: 0;
         padding: 0;
         line-height: 1em;
+        font-weight: 100 !important;
     }
 
     h2 {
@@ -304,24 +305,16 @@
 
     /* LEFT SIDE CONTAINER / MENU / WIDGETS */
 
-    .nav-container {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 272px;
-        z-index: 2;
-        width: 100%;
-    }
-
-
-
-
     #hamburger {
         width: 55px;
         margin: auto;
         display: block;
         transition: .3s ease-in-out;
+        position: absolute;
+        top:270px;
+        right: 0;
+        left:0;
+        z-index: 2;
     }
 
     #hamburger:hover {
@@ -338,16 +331,17 @@
         display: none;
         flex-direction: column;
         align-items: center;
+        margin-top:10px;
     }
 
     .menu-item {
         width: 100%;
         text-align: center;
-        line-height: 2em;
+        padding:.4em 0;
+        border-bottom:2px solid #1f1f1f;
         font-size: 1.5em;
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 600;
-        border-bottom: 1px solid #4d4d4d;
         background-size: 250% auto;
         background-image: -webkit-linear-gradient(left, #2fd58b 0%, #2fd58b 40%, #c2e088 70%, #c2e088 100%);
         transition: 300ms ease-in-out;
@@ -366,12 +360,12 @@
 
     .content-container {
         width: 100%;
+        margin: auto;
         display: flex;
         flex-flow: column;
     }
 
     #content-container {
-        margin-top: 20px;
     }
 
     #label-logos p {
@@ -396,7 +390,7 @@
         width: fit-content;
     }
 
-    #label-animation p {
+    #label-motion p {
         background-color: #e07a75;
         padding: 0 10px;
         color: #161616;
@@ -407,7 +401,7 @@
         width: fit-content;
     }
 
-    #label-package p {
+    #label-web p {
         background-color: #c65d7e;
         padding: 0 10px;
         color: #161616;
@@ -418,7 +412,7 @@
         width: fit-content;
     }
 
-    #label-video p {
+    #label-ad p {
         background-color: #6b75d6;
         padding: 0 10px;
         color: #161616;
@@ -509,7 +503,7 @@
     .link-container {
         display: flex;
         flex-flow: row wrap;
-        padding: 0px 10px;
+        padding: 0px 20px;
         gap: 10px;
         width: 100%;
         justify-content: center;
@@ -517,10 +511,10 @@
 
     .link-container .nav-card {
         margin: 0;
-        flex-basis: calc(33% - 10px);
+        /* flex-basis: calc(33% - 10px); 5 or more cards*/
+        flex-basis: 35%;
         padding: 10px 0px;
         margin: 2px;
-        filter: brightness(.8);
 
     }
 
@@ -530,9 +524,9 @@
 
     .link-container #nav-card-illustrations,
     .link-container #nav-card-logos,
-    .link-container #nav-card-animation,
-    .link-container #nav-card-package,
-    .link-container #nav-card-video,
+    .link-container #nav-card-motion,
+    .link-container #nav-card-web,
+    .link-container #nav-card-ad,
     .link-container #nav-card-fun {
         background-position-x: left;
     }
@@ -633,7 +627,7 @@
         width: 100%;
         height: 300px;
         position: relative;
-        padding: 10px;
+        padding: 20px;
     }
 
     .hero-image h1,
@@ -644,7 +638,7 @@
         position: absolute;
         bottom: 15px;
         vertical-align: center;
-        text-shadow: 0 0 20px black;
+        text-shadow: 0 5px 30px black;
     }
 
     .breadcrumb {
@@ -652,7 +646,7 @@
         font-weight: 600;
         color: #666666 !important;
         text-decoration: none !important;
-        margin: 0 10px 5px 10px;
+        margin: 0 20px 10px 20px;
         width: fit-content;
     }
 
@@ -665,7 +659,7 @@
         display: flex;
         flex-flow: column wrap;
         width: 100%;
-        padding: 1.5em 10px 0 10px;
+        padding: 1.5em 20px;
         gap: 15px;
     }
 
@@ -733,13 +727,11 @@
         opacity: 1;
     }
 
-    .img-full-hover {
+    .img-full {
         position: relative;
         width: 100%;
-        border-radius: .5em;
-        border: 1px solid #2f2f2f;
-        width: 100%;
-        height: 500px;
+        border-radius: 1.5em;
+        border: 1px solid #000;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -747,50 +739,9 @@
         margin-bottom: 10px;
     }
 
-    .lightbox {
-        display: none;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #161616;
-        padding: 0 10px;
+    .img-full> img {
         width: 100%;
-    }
-
-    /* Unhide the lightbox when it's the target */
-    .lightbox:target {
-        display: block;
-        width: 100%;
-    }
-
-    .lightbox span {
-        /* Full width and height */
-        position: absolute;
-        display: block;
-        margin: auto;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 97%;
-        height: 400px;
-        border-radius: .5em;
-        /* Size and position background image */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #eee;
-        box-shadow: 0 10px 0 black;
-        z-index: 2;
-    }
-
-    .lightbox:visited {
-        /* Full width and height */
-        display: none;
-
+        border-radius: 1.5em;
     }
 
     .hero-idaho-helicopters {
@@ -801,28 +752,8 @@
         background-repeat: no-repeat;
     }
 
-    .idaho-helicopters1 {
-        background-image: url(/images/idaho-helicopters1.jpg);
-    }
-
-    .idaho-helicopters2 {
-        background-image: url(/images/idaho-helicopters2.jpg);
-    }
-
-    .idaho-helicopters3 {
-        background-image: url(/images/idaho-helicopters3.jpg);
-    }
-
-    .idaho-helicopters4 {
-        background-image: url(/images/idaho-helicopters4.jpg);
-    }
-
-    .idaho-helicopters5 {
-        background-image: url(/images/idaho-helicopters5.jpg);
-    }
-
     .hero-dqp {
-        background-image: linear-gradient(0deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 0) 50%), url(/images/dqp-hero.jpg);
+        background-image: linear-gradient(0deg, rgba(31, 31, 31, .5) 0%, rgba(31, 31, 31, 0) 50%), url(/images/dqp-hero.jpg);
         background-color: #f5f5f5;
         background-position: center;
         background-size: contain;
@@ -830,119 +761,13 @@
         color: #7699dd
     }
 
-    .dqp1 {
-        background-image: url(/images/dqp1.jpg);
-    }
-
-    .dqp2 {
-        background-image: url(/images/dqp2.jpg);
-
-    }
-
-    .dqp3 {
-        background-image: url(/images/dqp-all.gif);
-        background-size: 90%;
-        background-color: #fff;
-    }
-
-    .dqp3-lightbox {
-        background-image: url(/images/dqp-all.gif);
-        background-size: 90% !important;
-        background-color: #fff !important;
-    }
-
-    .dqp4 {
-        background-image: url(/images/dqp4.gif);
-        background-size: 90%;
-        background-color: #fbfbfb;
-    }
-
-    .dqp4-lightbox {
-        background-image: url(/images/dqp4.gif);
-        background-size: 90% !important;
-        background-color: #fbfbfb !important;
-    }
-
-    .dqp5 {
-        background-image: url(/images/dqp5.gif);
-        background-size: 90%;
-        background-color: #fbfbfb;
-    }
-
-    .dqp5-lightbox {
-        background-image: url(/images/dqp5.gif);
-        background-size: 90% !important;
-        background-color: #fbfbfb !important;
-    }
-
-    .dqp6 {
-        background-image: url(/images/dqp6.jpg);
-
-    }
-
-    .dqp7 {
-        background-image: url(/images/dqp7.jpg);
-
-    }
-
     .hero-liverez {
         background-image: linear-gradient(0deg, rgba(2, 67, 100, 0.6) 0%, rgba(2, 67, 100, 0) 80%), url(/images/liverez-hero.jpg);
         background-position: center;
+        background-position-y: 0px;
         background-size: contain;
         background-repeat: no-repeat;
         background-color: #B1DFEC;
-    }
-
-    .liverez1 {
-        background-image: url(/images/liverez1.jpg);
-    }
-
-    .liverez2 {
-        background-image: url(/images/liverez2.jpg);
-        background-size: 100%;
-        background-color: #fafafa;
-    }
-
-    .liverez2-lightbox {
-        background-image: url(/images/liverez2.jpg);
-        background-size: 100% !important;
-        background-color: #fbfbfb !important;
-    }
-
-    .liverez3 {
-        background-image: url(/images/liverez3.jpg);
-    }
-
-    .liverez4 {
-        background-image: url(/images/liverez4.jpg);
-    }
-
-    .liverez5 {
-        background-image: url(/images/liverez5.jpg);
-    }
-
-    .liverez6 {
-        background-image: url(/images/liverez6.jpg);
-    }
-
-    .liverez7 {
-        background-image: url(/images/liverez7.jpg);
-    }
-
-    .liverez7-lightbox {
-        background-image: url(/images/liverez7.jpg);
-        background-size: 100% !important;
-        background-color: #fbfbfb !important;
-    }
-
-    .liverez8 {
-        background-image: url(/images/liverez8.jpg);
-    }
-
-    .liverez8-lightbox {
-        background-image: url(/images/liverez8.jpg);
-        background-size: 100% !important;
-        background-color: #fbfbfb !important;
     }
 
     .hero-watchdog {
@@ -953,39 +778,6 @@
         background-repeat: no-repeat;
     }
 
-    .watchdog1 {
-        background-image: url(/images/watchdog1.jpg);
-    }
-
-    .watchdog2 {
-        background-image: url(/images/watchdog2.jpg);
-
-    }
-
-    .watchdog2-lightbox {
-        background-image: url(/images/watchdog2.jpg);
-        background-size: 115% !important;
-        background-color: #333333 !important;
-    }
-
-    .watchdog3 {
-        background-image: url(/images/watchdog3.jpg);
-    }
-
-    .watchdog3-lightbox {
-        background-image: url(/images/watchdog3.jpg);
-        background-size: 110% !important;
-        background-color: #333333 !important;
-    }
-
-    .watchdog4 {
-        background-image: url(/images/watchdog4.jpg);
-    }
-
-    .watchdog5 {
-        background-image: url(/images/watchdog5.jpg);
-    }
-
     .hero-lr-xmas {
         background-image: linear-gradient(0deg, rgb(61, 79, 107) 0%, rgba(87, 119, 150, 0) 80%), url(/images/lr-xmas-hero.jpg);
         background-color: #f5f5f5;
@@ -994,68 +786,12 @@
         background-repeat: no-repeat;
     }
 
-    .lr-xmas1 {
-        background-image: url(/images/lr-xmas1.jpg);
-    }
-
-    .lr-xmas2 {
-        background-image: url(/images/lr-xmas2.jpg);
-    }
-
-    .lr-xmas3 {
-        background-image: url(/images/lr-xmas3.jpg);
-    }
-
-    .lr-xmas4 {
-        background-image: url(/images/lr-xmas4.jpg);
-    }
-
-    .lr-xmas5 {
-        background-image: url(/images/lr-xmas5.jpg);
-    }
-
     .hero-lr-zoom {
-        background-image: linear-gradient(0deg, rgba(95, 95, 95, 1) 0%, rgba(83, 83, 83, 0) 80%), url(/images/hero-lr-zoom.jpg);
+        background-image: linear-gradient(0deg, #28354d 0%, #1f2f4400 80%), url(/images/hero-lr-zoom.jpg);
         background-color: #f5f5f5;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    }
-
-    .lr-zoom1 {
-        background-image: url(/images/lr-zoom1.jpg);
-    }
-
-    .lr-zoom2 {
-        background-image: url(/images/lr-zoom2.jpg);
-    }
-
-    .lr-zoom3 {
-        background-image: url(/images/lr-zoom3.jpg);
-    }
-
-    .lr-zoom4 {
-        background-image: url(/images/lr-zoom4.jpg);
-    }
-
-    .lr-zoom5 {
-        background-image: url(/images/lr-zoom5.jpg);
-    }
-
-    .lr-zoom6 {
-        background-image: url(/images/lr-zoom6.jpg);
-    }
-
-    .lr-zoom7 {
-        background-image: url(/images/lr-zoom7.jpg);
-    }
-
-    .lr-zoom8 {
-        background-image: url(/images/lr-zoom8.jpg);
-    }
-
-    .lr-zoom9 {
-        background-image: url(/images/lr-zoom9.jpg);
     }
 
     .hero-reanimator {
@@ -1066,61 +802,12 @@
         background-repeat: no-repeat;
     }
 
-    .reanimator1 {
-        background-image: url(/images/reanimator1.jpg);
-    }
-
-    .reanimator2 {
-        background-image: url(/images/reanimator2.jpg);
-    }
-
-    .reanimator3 {
-        background-image: url(/images/reanimator3.jpg);
-    }
-
-    .reanimator3 {
-        background-image: url(/images/reanimator3.jpg);
-        background-size: 100% !important;
-        background-color: #eeeeee !important;
-
-    }
-
-    .reanimator3-lightbox {
-        background-image: url(/images/reanimator3.jpg);
-        background-size: 100% !important;
-        background-color: #eeeeee !important;
-    }
-
-    .reanimator4 {
-        background-image: url(/images/reanimator4.jpg);
-    }
-
     .hero-lr-animation {
-        background-color: #2f2f2f;
-        width: 100%;
-        height: 300px;
-        position: relative;
-        background-color: #AEADB0;
-    }
-
-    .hero-lr-animation video {
-        width: 108%;
-        filter: brightness(.7);
-    }
-
-    .hero-lr-animation h1 {
-        padding: 0 10px;
-        margin: auto;
-        display: block;
-        width: 100%;
-        position: absolute;
-        bottom: 15px;
-        vertical-align: center;
-        text-shadow: 0 0 20px black;
-    }
-
-    .lr-animation1 {
-        background-image: url(/images/lr-animation1.jpg);
+        background-image: linear-gradient(0deg, #024465 0%, #02446500 100%), url(/images/lr-animation-hero.jpg);
+        background-color: #f5f5f5;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .hero-inktober {
@@ -1131,36 +818,12 @@
         background-repeat: no-repeat;
     }
 
-    .inktober1 {
-        background-image: url(/images/inktober.gif);
-        background-size: contain;
-    }
-
-    .inktober2 {
-        background-image: url(/images/inktober2.gif);
-        background-size: contain;
-    }
-
-    .inktober3 {
-        background-image: url(/images/inktober3.gif);
-        background-size: contain;
-    }
-
     .hero-starbucks {
         background-image: linear-gradient(0deg, rgb(40, 72, 85) 0%, rgba(117, 162, 184, 0) 80%), url(/images/starbucks.jpg);
         background-color: #f5f5f5;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    }
-
-    .starbucks1 {
-        background-image: url(/images/starbucks1.jpg);
-    }
-
-    .starbucks2 {
-        background-image: url(/images/starbucks2.jpg);
-        background-size: contain;
     }
 
     .hero-lr-icons {
@@ -1171,26 +834,6 @@
         background-repeat: no-repeat;
     }
 
-    .lr-icons1 {
-        background-image: url(/images/lr-icons1.jpg);
-    }
-
-    .lr-icons2 {
-        background-image: url(/images/lr-icons2.jpg);
-    }
-
-    .lr-icons3 {
-        background-image: url(/images/lr-icons3.jpg);
-        background-size: contain;
-        background-color: #024465;
-    }
-
-    .lr-icons4 {
-        background-image: url(/images/lr-icons4.jpg);
-        background-size: contain;
-        background-color: #84c1dd;
-    }
-
     .hero-common-good {
         background-image: linear-gradient(0deg, #0e0e0e 0%, #0e0e0e00 80%), url(/images/hero-common-good.jpg);
         background-color: #eee;
@@ -1199,110 +842,20 @@
         background-repeat: no-repeat;
     }
 
-    .common-good1 {
-        background-image: url(/images/common-good1.jpg);
-        background-size: contain;
-        background-color: #fff;
-    }
-
-    .common-good2 {
-        background-image: url(/images/common-good2.jpg);
-        background-size: contain;
-        background-color: #fff;
-    }
-
-    .common-good3 {
-        background-image: url(/images/common-good3.jpg);
-        background-size: contain;
-        background-color: #fff;
-    }
-
-    .common-good4 {
-        background-image: url(/images/common-good4.jpg);
-        background-size: contain;
-        background-color: #dfdfdf;
-    }
-
-    .common-good4-lightbox {
-        background-image: url(/images/common-good4.jpg);
-        background-size: contain !important;
-        background-color: #dfdfdf !important;
-    }
-
-    .common-good5 {
-        background-image: url(/images/common-good5.jpg);
-        background-size: contain;
-        background-color: #dfdfdf;
-    }
-
-    .common-good5-lightbox {
-        background-image: url(/images/common-good5.jpg);
-        background-size: contain !important;
-        background-color: #dfdfdf !important;
-    }
-
-    .common-good6 {
-        background-image: url(/images/common-good6.jpg);
-    }
-
-    .common-good6-lightbox {
-        background-image: url(/images/common-good6.jpg);
-        background-size: contain !important;
-        background-color: #dfdfdf !important;
-    }
-
-    .common-good7 {
-        background-image: url(/images/common-good7.jpg);
-    }
-
-    .common-good7-lightbox {
-        background-image: url(/images/common-good7.jpg);
-        background-size: contain !important;
-        background-color: #dfdfdf !important;
-    }
-
-    .common-good8 {
-        background-image: url(/images/common-good8.jpg);
-    }
-
-    .common-good9 {
-        background-image: url(/images/common-good9.jpg);
-    }
-
-    .common-good9-lightbox {
-        background-image: url(/images/common-good9.jpg);
-        background-size: contain !important;
-        background-color: #dfdfdf !important;
-    }
-
-    .common-good10 {
-        background-image: url(/images/common-good10.jpg);
-    }
-
-    .common-good10-lightbox {
-        background-image: url(/images/common-good10.jpg);
-        background-size: contain !important;
-        background-color: #dfdfdf !important;
-    }
-
-    .common-good11 {
-        background-image: url(/images/common-good11.jpg);
-    }
-
-    .common-good12 {
-        background-image: url(/images/common-good12.jpg);
-    }
-
-    .hero-lr-testimonial {
-        background-image: linear-gradient(0deg, #001018 0%, #00283b00 80%), url(/images/lr-testimonial-hero.jpg);
-        background-color: #024465;
+    .hero-honey-maid {
+        background-image: linear-gradient(0deg, #0e0e0e 0%, #0e0e0e00 80%), url(/images/hero-honey-maid.jpg);
+        background-color: #eee;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
-    .lr-testimonial1 {
-        background-image: url(/images/lr-testimonial1.jpg);
+    .hero-lr-testimonial {
+        background-image: linear-gradient(0deg, #001018 0%, #00283b00 80%), url(/images/lr-testimonial-hero.jpg);
+        background-color: #;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .hero-lr-demo {
@@ -1311,10 +864,6 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    }
-
-    .lr-demo1 {
-        background-image: url(/images/lr-demo1.jpg);
     }
 
     .resume-icon {
@@ -1413,10 +962,10 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        border-radius: .5em;
+        border-radius: 1.5em;
         background: #2f2f2f;
         padding: 20px;
-        margin: 0px 10px 20px 10px;
+        margin: 0px 20px 10px 20px;
         transition: 50ms ease-in-out;
         text-align: center;
         color: white;
@@ -1431,9 +980,9 @@
     /* Color backgrounds for each category */
     #nav-card-illustrations:hover,
     #nav-card-logos:hover,
-    #nav-card-animation:hover,
-    #nav-card-package:hover,
-    #nav-card-video:hover,
+    #nav-card-motion:hover,
+    #nav-card-web:hover,
+    #nav-card-ad:hover,
     #nav-card-fun:hover {
         background-position-x: left;
     }
@@ -1441,9 +990,9 @@
     /* Category gradient background size & position */
     #nav-card-illustrations,
     #nav-card-logos,
-    #nav-card-animation,
-    #nav-card-package,
-    #nav-card-video,
+    #nav-card-motion,
+    #nav-card-web,
+    #nav-card-ad,
     #nav-card-fun {
         background-size: 400% auto;
         background-position-x: right;
@@ -1455,18 +1004,18 @@
     }
 
     #nav-card-logos {
-        background-image: -webkit-linear-gradient(right, #2f2f2f 0%, #2f2f2f 25%, #efb75e 75%, #f7d66d 100%);
+        background-image: -webkit-linear-gradient(right, #2f2f2f 0%, #2f2f2f 25%, #efb75e 95%, #f7d66d 100%);
     }
 
-    #nav-card-animation {
+    #nav-card-motion {
         background-image: -webkit-linear-gradient(right, #2f2f2f 0%, #2f2f2f 25%, #e07a75 75%, #efab8f 100%);
     }
 
-    #nav-card-package {
+    #nav-card-web {
         background-image: -webkit-linear-gradient(right, #2f2f2f 0%, #2f2f2f 25%, #c65d7e 75%, #e27999 100%);
     }
 
-    #nav-card-video {
+    #nav-card-ad {
         background-image: -webkit-linear-gradient(right, #2f2f2f 0%, #2f2f2f 25%, #b18ee8 75%, #cf9af4 100%);
     }
 
@@ -1490,16 +1039,16 @@
         background-image: url(/images/logos-icon.svg);
     }
 
-    #nav-icon-animation {
-        background-image: url(/images/animation-icon.svg);
+    #nav-icon-motion {
+        background-image: url(/images/motion-icon.svg);
     }
 
-    #nav-icon-package {
+    #nav-icon-web {
         background-image: url(/images/product-icon.svg);
     }
 
-    #nav-icon-video {
-        background-image: url(/images/video-editing-icon.svg);
+    #nav-icon-ad {
+        background-image: url(/images/ad-icon.svg);
     }
 
     #nav-icon-fun {
@@ -1507,11 +1056,11 @@
     }
 
     .nav-card:hover i {
-        animation: nav-icon-animation .7s steps(2) infinite;
+        animation: nav-icon-motion .7s steps(2) infinite;
         transition: .2s ease-in-out;
     }
 
-    @keyframes nav-icon-animation {
+    @keyframes nav-icon-motion {
         from {
             background-position-x: 0px;
         }
@@ -1522,7 +1071,7 @@
     }
 
 
-    .button {
+    .button-default, .button-logos, .button-adv, .button-motion, .button-web, .button-illustrations {
         text-transform: uppercase;
         font-size: .9em;
         font-weight: 700;
@@ -1534,19 +1083,37 @@
         text-align: center;
         color: white;
         align-items: center;
-        background-image: -webkit-linear-gradient(left, #2fd58b 0%, #2fd58b 40%, #c2e088 70%, #c2e088 100%);
         transition: 300ms ease-in-out;
         background-size: 250% auto;
         border: none;
         cursor: pointer;
     }
 
-    .button:hover {
+    .button-default {
+        background-image:-webkit-linear-gradient(left, #2fd58b 0%, #2fd58b 40%, #c2e088 70%, #c2e088 100%);
+    }
+    .button-logos {
+        background-image:-webkit-linear-gradient(right,  #f7d66d 0%,#efb75e 100%);
+    }
+    .button-adv {
+        background-image:-webkit-linear-gradient(right,#b18ee8 0%, #cf9af4 100%);
+    }
+    .button-motion {
+        background-image:-webkit-linear-gradient(right,#e07a75 0%, #efab8f 100%);
+    }
+    .button-web {
+        background-image:-webkit-linear-gradient(right, #c65d7e 0%, #e27999 100%);
+    }
+    .button-illustrations {
+        background-image:-webkit-linear-gradient(right, #6b75d6 0%, #7699dd 100%);
+    }
+
+    .button-default:hover, .button-logos:hover, .button-adv:hover, .button-motion:hover, .button-web:hover, .button-illustrations:hover {
         background-position: right;
         transform: translateY(-10px);
         box-shadow: 0px 10px 0px black;
         color: #161616;
-
+        transition: .15s ease-out;
     }
 
     #arrow-up-1,
@@ -1573,7 +1140,7 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        margin: 0 10px 30px 10px;
+        margin: 0 20px 30px 20px;
     }
 
     .cards-item {
@@ -1584,7 +1151,7 @@
     }
 
     .card {
-        border-radius: .7em .7em .5em .5em;
+        border-radius: 1.7em 1.7em 1.5em 1.5em;
         flex-basis: calc(50% - 5px);
         background: #fff;
         flex: 1;
@@ -1602,11 +1169,11 @@
     }
 
     .card-image {
-        height: 200px;
+        height: 170px;
         background-position: center center;
-        background-size: cover;
-        border-radius: 0.5em .5em 0 0;
-        filter: brightness(.8);
+        background-size: 110%;
+        border-radius: 1.5em 1.5em 0 0;
+        background-repeat: no-repeat;
     }
 
     /* LOGOS */
@@ -1633,6 +1200,7 @@
 
     .liverez {
         background-image: url(/images/liverez.jpg);
+        background-color:#b1dfec;
         transition: 100ms ease-in-out;
     }
 
@@ -1704,7 +1272,16 @@
         filter: brightness(1);
     }
 
-    /* PACKAGE DESIGN */
+    /* ADVERTISING */
+    .honey-maid {
+        background-image: url(/images/honey-maid.jpg);
+        transition: 100ms ease-in-out;
+    }
+    .honey-maid:hover {
+        background-image: url(/images/honey-maid.gif);
+        filter: brightness(1);
+    }
+
     .common-good {
         background-image: url(/images/common-good.jpg);
         transition: 100ms ease-in-out;
@@ -1885,8 +1462,10 @@
             display: block;
         }
 
-        .page-container {
-            padding: 0 100px 0 20px;
+        .menu-item {
+            text-align: left;
+            padding:0 0 .4em 0;
+            border-bottom:none;
         }
 
         .content-container {
@@ -1908,36 +1487,21 @@
             justify-content: center;
         }
 
-        .page-container {
-            display: flex;
-            flex-flow: row nowrap;
-        }
-
         .icon {
             display: none;
         }
 
-        .page-container>.nav-container {
-            position: inherit;
-            width: 300px;
-            float: left;
-            height: 200px;
-        }
-
         .menu-links {
-            display: flex !important;
+            display:flex !important;
             flex-grow: 2;
-            position: sticky;
-            top: 0;
-        }
-
-        .menu-item {
-            border: none;
+            margin-top:0 !important;
+            z-index: 2;
         }
 
         .link-container {
             flex-flow: row nowrap;
             justify-content: unset;
+            margin: auto;
         }
 
         .social-link {
@@ -2017,8 +1581,7 @@
         }
 
         .hero-image {
-            height: 400px;
-            border-radius: .5em;
+            border-radius: 1.5em;
             padding: 30px;
             margin-top: 10px;
         }
@@ -2051,7 +1614,7 @@
 
         .one-column,
         .two-column {
-            padding: 1.5em 0 0 0;
+            padding: 1.5em 0;
         }
 
         .two-column {
@@ -2077,27 +1640,30 @@
         .bottom-nav .link-container {
             width: 80%;
             margin: auto;
-            flex-flow: row wrap;
+        }
+        .page-container {
+            
+            display: flex;
+            flex-flow: row nowrap;
+            width:850px;
+            margin:auto;
+        }
+
+        .nav-container {
+            width:140px;
         }
 
     }
 
     @media only screen and (min-width: 1300px) {
-        .page-container {
-            padding: 0 300px 0 50px;
-        }
 
-        .nav-container {
-            width: 400px;
+        .card-image {
+            height:300px;
         }
 
         .social-link div {
             width: 85px !important;
             height: 70px !important;
-        }
-
-        .card-image {
-            height: 350px !important;
         }
 
         .button {
@@ -2125,8 +1691,7 @@
         }
 
         .hero-image {
-            height: 450px;
-            border-radius: .5em;
+            border-radius: 1.5em;
             padding: 30px;
             margin-top: 10px;
         }
@@ -2155,5 +1720,14 @@
 
         .one-column video {
             height: 515px;
+        }
+
+        .page-container {
+            width:1100px;
+            margin:auto;
+        }
+
+        .nav-container {
+            width:170px;
         }
     }

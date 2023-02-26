@@ -8,10 +8,10 @@ function hamBurger() {
     x.style.display = "flex";
   }
   var x = document.getElementById("content-container");
-  if (x.style.marginTop === "180px") {
-    x.style.marginTop = "20px";
+  if (x.style.marginTop === "15px") {
+    x.style.marginTop = "0px";
   } else {
-    x.style.marginTop = "180px";
+    x.style.marginTop = "15px";
   }
 }
 
