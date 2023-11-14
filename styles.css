@@ -471,15 +471,15 @@
         height: 110px;
         border-radius: 60px;
         background-color: #2fd58b;
-        border: 8px solid #eee;
-        box-shadow: #161616 0 2px 20px;
+        /* border: 5px solid #c2e088; */
+        box-shadow: #063017 0 2px 20px;
         background-image: url(/images/hello.gif);
         background-size: 80px;
         background-position: center;
         background-repeat: no-repeat;
         position: absolute;
         top: 0;
-        right: -44px;
+        right: -24px;
         transition: 200ms ease;
 
     }
